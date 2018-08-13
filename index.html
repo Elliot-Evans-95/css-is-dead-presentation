@@ -42,13 +42,11 @@
 					<h2>To cover:</h2>
 					<ul>
 						<li style="color: #e84238"><span style="color: #333">History</span></li>
-						<li style="color: #e84238"><span style="color: #333">Side Notes</span></li>
 						<li style="color: #e84238"><span style="color: #333">CSS Level 3</span></li>
 						<li style="color: #e84238"><span style="color: #333">Vendor Prefixes</span></li>
 						<li style="color: #e84238"><span style="color: #333">Preprocessors</span></li>
 						<li style="color: #e84238"><span style="color: #333">CSS-in-JS</span></li>
 						<li style="color: #e84238"><span style="color: #333">Shadow-DOM</span></li>
-						<li style="color: #e84238"><span style="color: #333">Death of CSS</span></li>
 						<li style="color: #e84238"><span style="color: #333">Future of CSS</span></li>
 					</ul>
 
@@ -76,7 +74,6 @@
 						Writers of Web pages complained that they didn't have enough influence over how their pages looked. One of the first questions from an author new to the Web was how to change fonts and colors of elements. At that time, HTML did not provide this functionality.
 
 						Håkon published the first draft of the Cascading HTML Style Sheets proposal.
-
 					</aside>
 				</section>
 
@@ -107,7 +104,6 @@
 
 					<h2>History</h2>
 					<h5>Side Note</h5>
-
 
 					<div class="fragment fade-up">
 						<h5>JSSS - JavaScript Style Sheets</h5>
@@ -153,18 +149,16 @@
 						</ul>
 					</div>
 
-					<div class="fragment">
-						<section>
-								<pre style="box-shadow: none;">
-									<code data-trim data-noescape>
-										-webkit-transition: all 4s ease;
-										-moz-transition: all 4s ease;
-										-ms-transition: all 4s ease;
-										-o-transition: all 4s ease;
-										transition: all 4s ease;
-									</code>
-								</pre>
-						</section>
+					<div class="fragment fade-up">
+						<pre style="box-shadow: none;">
+							<code data-trim data-noescape>
+								-webkit-transition: all 4s ease;
+								-moz-transition: all 4s ease;
+								-ms-transition: all 4s ease;
+								-o-transition: all 4s ease;
+								transition: all 4s ease;
+							</code>
+						</pre>
 					</div>
 
 					<!-- NOTES -->
@@ -181,45 +175,13 @@
 
 					<div class="fragment fade-up">
 						<h5>SCSS</h5>
-						<!--<h5>LESS</h5>-->
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
+						<!---->
 					</aside>
 				</section>
-
-				<!-- CSS PRE PROCESSOR IN ACTION - LESS -->
-				<!--<section>-->
-					<!--<h2>Pre-processors</h2>-->
-					<!--<h2>LESS</h2>-->
-
-					<!--<div class="fragment fade-up">-->
-						<!--<h5>Intro</h5>-->
-					<!--</div>-->
-					<!--<div class="fragment fade-up">-->
-						<!--<h5>History</h5>-->
-					<!--</div>-->
-					<!--<div class="fragment fade-up">-->
-						<!--<h5>Key Features</h5>-->
-					<!--</div>-->
-
-					<!--&lt;!&ndash; NOTES &ndash;&gt;-->
-					<!--<aside class="notes">-->
-						<!--Intro-->
-						<!-- - One of the more commonly used PreProcessors out there (used by Bootstrap 3 for example)-->
-						<!--History-->
-						<!-- - Less was created in 2009 by Alexis Sellier, more commonly known as @cloudhead. Originally written in Ruby, it was then ported to JavaScript.-->
-						<!-- - Less was originally inspired by Sass, with a leaner feature set and a syntax closely matching CSS, which Sass did not have at the time. (Sass was later inspired by Less to create SCSS, its own CSS-like syntax.)-->
-						<!--Key Features-->
-							<!--Extending CSS with LESS functions:-->
-						<!-- - If statements-->
-						<!-- - String functions-->
-						<!-- - List functions-->
-						<!-- - Color functions-->
-
-					<!--</aside>-->
-				<!--</section>-->
 
 				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
 				<section>
@@ -234,78 +196,76 @@
 					</div>
 					<div class="fragment fade-up">
 						<h5>Key Features</h5>
-						<section>
-							<pre style="box-shadow: none;">
-								<code data-trim data-noescape>
-									$color-grey: #333;
 
-									@mixin font-size($sizeValue: 12 ) {
-										font-size: (0.0625 * $sizeValue) + rem;
-									}
+						<pre style="box-shadow: none;">
+							<code data-trim data-noescape>
+								$color-grey: #333;
 
-									@function my-calculation-function($some-number, $another-number){
-									  @return $some-number + $another-number
-									}
+								@mixin font-size($sizeValue: 12 ) {
+									font-size: (0.0625 * $sizeValue) + rem;
+								}
 
-									.one {
-									  display: block;
-									}
+								@function my-calculation-function($some-number, $another-number){
+								  @return $some-number + $another-number
+								}
 
-									.test {
-									  @extend .one;
-									  @include font-size(14);
-									  background: $color-grey;
-									}
+								.one {
+								  display: block;
+								}
 
-									@for $i from 1 through 10 {
-									  .box:nth-of-type(#{$i}) {
-										background-color: darken(cornflowerblue, 0% + $i);
-									  }
-									}
-								</code>
-							</pre>
-						</section>
+								.test {
+								  @extend .one;
+								  @include font-size(14);
+								  background: $color-grey;
+								}
+
+								@for $i from 1 through 10 {
+								  .box:nth-of-type(#{$i}) {
+									background-color: darken(cornflowerblue, 0% + $i);
+								  }
+								}
+							</code>
+						</pre>
 					</div>
 					<div class="fragment fade-up">
 						<h5>New Features</h5>
-						<section>
-							<pre style="box-shadow: none;">
-								<code data-trim data-noescape>
-									$colors: (
-									  light: #ccc,
-									  dark: #000
-									);
 
-									$brand-colors: (
-									  main: red,
-									  alternative: blue
-									);
+						<pre style="box-shadow: none;">
+							<code data-trim data-noescape>
+								$colors: (
+								  light: #ccc,
+								  dark: #000
+								);
 
-									$merged: map-merge($colors, $brand-colors);
+								$brand-colors: (
+								  main: red,
+								  alternative: blue
+								);
 
-									%one {
-									  display: block;
-									}
+								$merged: map-merge($colors, $brand-colors);
 
-									.element {
-									  @extend %one;
-									  content: map-get($merged, alternative);
-									}
+								%one {
+								  display: block;
+								}
 
-									$map: (
-									  h1: 20px,
-									  h2: 16px,
-									  h3: 14px
-									);
+								.element {
+								  @extend %one;
+								  content: map-get($merged, alternative);
+								}
 
-									@each $element, $size in $map {
-									  #{$element} {
-										font-size: $size;
-									  }
-									}
-								</code>
-							</pre>
-						</section>
+								$map: (
+								  h1: 20px,
+								  h2: 16px,
+								  h3: 14px
+								);
+
+								@each $element, $size in $map {
+								  #{$element} {
+									font-size: $size;
+								  }
+								}
+							</code>
+						</pre>
 					</div>
 
 					<!-- NOTES -->
@@ -382,7 +342,7 @@
 					<div class="fragment">
 						<h5>Example: Styled Components</h5>
 
-						<h5>*Example*</h5>
+						<iframe src="https://codesandbox.io/embed/rkmnrbye4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</div>
 
 					<!-- NOTES -->
@@ -397,7 +357,30 @@
 					<div class="fragment">
 						<h5>Example: CSS Modules</h5>
 
-						<h5>*Example*</h5>
+						<pre style="box-shadow: none; height: 280px; margin: 0 auto;">
+							<code data-trim data-noescape>
+								:local .className {
+									color: red;
+								}
+								:local(.className .subClass) {
+									color: green;
+								}
+								:local .className .subClass :global(.global-class-name) {
+									color: blue;
+								}
+							</code>
+						</pre>
+
+						<pre style="box-shadow: none; height: 280px; margin: 0 auto;">
+							<code data-trim data-noescape>
+								._23_aKvs-b8bW2Vg3fwHozO { color: red; }
+								._23_aKvs-b8bW2Vg3fwHozO ._13LGdX8RMStbBE9w-t0gZ1 {
+									color: green;
+								}
+								._23_aKvs-b8bW2Vg3fwHozO ._13LGdX8RMStbBE9w-t0gZ1
+								.global-class-name { color: blue; }
+							</code>
+						</pre>
 					</div>
 
 					<!-- NOTES -->
@@ -410,21 +393,50 @@
 					<h2>Shadow-DOM</h2>
 
 					<div class="fragment fade-up">
-						<h5>*Example*</h5>
+						<h5>Web Components</h5>
+					</div>
+
+					<div class="fragment fade-up">
+						<h5>Encapsulation</h5>
+					</div>
+
+					<div class="fragment fade-up">
+						<h5>Terminology</h5>
+					</div>
+
+					<div class="fragment fade-up">
+						<!--<h5>Example</h5>-->
+
+						<pre style="box-shadow: none;">
+							<code data-trim data-noescape>
+								style.textContent = `
+									:host {
+									  display: inline-block;
+									}
+
+									.lh-button {
+									  background: gray;
+									  color: red;
+									}
+								`;
+							</code>
+						</pre>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
+						- What uses Shadow DOM
 						An important aspect of web components is encapsulation — being able to keep the markup structure, style, and behavior hidden and separate from other code on the page so that different parts do not clash, and the code can be kept nice and clean. The Shadow DOM API is a key part of this, providing a way to attach a hidden separate DOM to an element. This article covers the basics of Shadow DOM.
 
+						- Details
 						Shadow DOM allows hidden DOM trees to be attached to elements in the regular DOM tree — this shadow DOM tree starts with a shadow root, underneath which can be attached to any elements you want, in the same way as the normal DOM.
 
+						- Terminology
 						There are some bits of shadow DOM terminology to be aware of:
 						Shadow host: The regular DOM node that the shadow DOM is attached to.
 						Shadow tree: The DOM tree inside the shadow DOM.
 						Shadow boundary: the place where the shadow DOM ends, and the regular DOM begins.
 						Shadow root: The root node of the shadow tree.
-
 					</aside>
 				</section>
 
