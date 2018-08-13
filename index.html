@@ -170,6 +170,19 @@
 				</section>
 
 				<!-- PRE PROCESSOR OVERVIEW -->
+				<!--<section>-->
+
+					<!--<div class="fragment fade-up">-->
+						<!--<h5>SCSS</h5>-->
+					<!--</div>-->
+
+					<!--&lt;!&ndash; NOTES &ndash;&gt;-->
+					<!--<aside class="notes">-->
+						<!--&lt;!&ndash;&ndash;&gt;-->
+					<!--</aside>-->
+				<!--</section>-->
+
+				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
 				<section>
 					<h2>Pre-processors</h2>
 
@@ -177,95 +190,11 @@
 						<h5>SCSS</h5>
 					</div>
 
-					<!-- NOTES -->
-					<aside class="notes">
-						<!---->
-					</aside>
-				</section>
-
-				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
-				<section>
-					<h2>Pre-processors</h2>
-					<h2>SCSS</h2>
-
 					<div class="fragment fade-up">
 						<h5>Intro</h5>
 					</div>
 					<div class="fragment fade-up">
 						<h5>History</h5>
-					</div>
-					<div class="fragment fade-up">
-						<h5>Key Features</h5>
-
-						<pre style="box-shadow: none;">
-							<code data-trim data-noescape>
-								$color-grey: #333;
-
-								@mixin font-size($sizeValue: 12 ) {
-									font-size: (0.0625 * $sizeValue) + rem;
-								}
-
-								@function my-calculation-function($some-number, $another-number){
-								  @return $some-number + $another-number
-								}
-
-								.one {
-								  display: block;
-								}
-
-								.test {
-								  @extend .one;
-								  @include font-size(14);
-								  background: $color-grey;
-								}
-
-								@for $i from 1 through 10 {
-								  .box:nth-of-type(#{$i}) {
-									background-color: darken(cornflowerblue, 0% + $i);
-								  }
-								}
-							</code>
-						</pre>
-					</div>
-					<div class="fragment fade-up">
-						<h5>New Features</h5>
-
-						<pre style="box-shadow: none;">
-							<code data-trim data-noescape>
-								$colors: (
-								  light: #ccc,
-								  dark: #000
-								);
-
-								$brand-colors: (
-								  main: red,
-								  alternative: blue
-								);
-
-								$merged: map-merge($colors, $brand-colors);
-
-								%one {
-								  display: block;
-								}
-
-								.element {
-								  @extend %one;
-								  content: map-get($merged, alternative);
-								}
-
-								$map: (
-								  h1: 20px,
-								  h2: 16px,
-								  h3: 14px
-								);
-
-								@each $element, $size in $map {
-								  #{$element} {
-									font-size: $size;
-								  }
-								}
-							</code>
-						</pre>
 					</div>
 
 					<!-- NOTES -->
@@ -278,20 +207,137 @@
 
 						SCSS v SASS
 						- The key difference is that SASS is the one without the brackets.
+					</aside>
+				</section>
 
+				<section>
+					<h2>SCSS</h2>
+
+					<div class="fragment fade-up">
+
+						<h5>Key Features</h5>
+
+						<div class="fragment">
+							Variables | Mixins | Functions
+						</div>
+
+						<div class="fragment fade-up">
+							<pre style="box-shadow: none;">
+								<code data-trim data-noescape>
+									$color-grey: #333;
+
+									@mixin font-size($sizeValue: 12 ) {
+										font-size: (0.0625 * $sizeValue) + rem;
+									}
+
+									@function my-calculation-function($some-number, $another-number){
+									  @return $some-number + $another-number
+									}
+
+									.test {
+									  @include font-size(14);
+									  background: $color-grey;
+									}
+
+								</code>
+							</pre>
+						</div>
+
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
 						Key Features
 						- Variables
 						- Mixins & Function // Difference between the two is that function can only output a single value
+					</aside>
+				</section>
+
+				<section>
+					<h2>SCSS</h2>
+
+					<div class="fragment fade-up">
+
+						<h5>Key Features</h5>
+
+						<div class="fragment">
+							Statements | Extends | Loops
+						</div>
+
+						<div class="fragment fade-up">
+							<pre style="box-shadow: none;">
+								<code data-trim data-noescape>
+									.one {
+									  display: block;
+									}
+
+									.test {
+									  @extend .one;
+									}
+
+									@for $i from 1 through 10 {
+									  .box:nth-of-type(#{$i}) {
+										background-color: darken(cornflowerblue, 0% + $i);
+									  }
+									}
+								</code>
+							</pre>
+						</div>
+
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						Key Features
 						- If Statements
 						- Extends
 						- Loops // Each // For // While
+					</aside>
+				</section>
 
+				<section>
+					<h2>SCSS</h2>
+
+					<div class="fragment fade-up">
+
+						<h5>New Features</h5>
+
+						<div class="fragment">
+							Maps | Placeholders
+						</div>
+
+						<div class="fragment fade-up">
+							<pre style="box-shadow: none;">
+								<code data-trim data-noescape>
+									%one {
+									  display: block;
+									}
+									.element {
+									  @extend %one;
+									}
+
+									$map: ( h1: 20px, h2: 16px, h3: 14px );
+
+									@each $element, $size in $map {
+									  #{$element} {
+										font-size: $size;
+									  }
+									}
+								</code>
+							</pre>
+						</div>
+
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
 						New Features
-						- Maps:
-							You can you use maps with other SCSS features such as loops to generate CSS classes, such as teh @each loop
-						- Placeholders:
-							A cleaner way of using extend as the placeholder class does not render
 
+						- Maps:
+						You can you use maps with other SCSS features such as loops to generate CSS classes, such as teh @each loop
+
+						- Placeholders:
+						A cleaner way of using extend as the placeholder class does not render
 					</aside>
 				</section>
 
@@ -464,53 +510,95 @@
 
 				</section>
 
-
 				<!-- Future of CSS -->
 				<section>
 					<h2>Future of CSS</h2>
 
 					<div class="fragment fade-up">
-						Guil Hernandez
+						<h5>Guil Hernandez</h5>
+						- Teacher at Treehouse
 					</div>
+
+					<div class="fragment fade-up">
+						<ul>
+							<li style="color: #e84238"><span style="color: #333">CSS Variables-</span></li>
+							<li style="color: #e84238"><span style="color: #333">:matches()</span></li>
+							<li style="color: #e84238"><span style="color: #333">Future Queries</span></li>
+							<li style="color: #e84238"><span style="color: #333">CSS Shapes</span></li>
+							<li style="color: #e84238"><span style="color: #333">Clip paths</span></li>
+							<li style="color: #e84238"><span style="color: #333">blending</span></li>
+							<li style="color: #e84238"><span style="color: #333">Backdrop filters</span></li>
+							<li style="color: #e84238"><span style="color: #333">Responsive Typography</span></li>
+						</ul>
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						Idea that that the future of CSS is to extend the language to be able to do more visual effects on a site
+					</aside>
+				</section>
+
+				<!-- Future of CSS (2) -->
+				<section>
+					<h2>Future of CSS</h2>
 
 					<div class="fragment fade-up">
 						Maxime Thirouin  (MoOx)
 					</div>
 
 					<div class="fragment fade-up">
+						Yoga
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						- MoOx
+
+						Yoga is made by facebook as an open source, cross platform solution to creating flexible layouts
+						https://yogalayout.com/
+					</aside>
+				</section>
+
+				<!-- Future of CSS (3) -->
+				<section>
+					<h2>Future of CSS</h2>
+
+
+					<div class="fragment fade-up">
 						Das Surma
 					</div>
+
+					<div class="fragment fade-up">
+						Houdini CSS
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						- Das Surma
+
+						Houdini CSS
+					</aside>
+				</section>
+
+				<!-- Future of CSS (4) -->
+				<section>
+					<h2>Future of CSS</h2>
 
 					<div class="fragment fade-up">
 						Elliot Evans
 					</div>
 
+					<div class="fragment fade-up">
+						Component Based CSS
+						PostCSS / Babel style transpiling for CSS (postcss-preset-env)
+					</div>
+
 					<!-- NOTES -->
 					<aside class="notes">
-						- Guil Hernandez
-
-						Teacher at Treehouse
-						CSS Variables
-						:matches()
-						Future Queries
-						CSS Shapes
-						Clip paths
-						blending
-						Backdrop filters
-						Responsive Typography
-
 						- Elliot Evans
 
 						Component Based CSS
 						PostCSS / Babel style transpiling for CSS (postcss-preset-env)
-
-						- MoOx
-
-						Facebook Yoga - https://yogalayout.com/
-
-						- Das Surma
-
-						Houdini CSS
 					</aside>
 				</section>
 
