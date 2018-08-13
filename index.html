@@ -62,7 +62,7 @@
 				<!-- History (1) -->
 				<section>
 
-					<h5>History</h5>
+					<h2>History</h2>
 
 
 					<div class="fragment fade-up">
@@ -83,7 +83,7 @@
 				<!-- History (2) -->
 				<section>
 
-					<h5>History</h5>
+					<h2>History</h2>
 
 
 					<div class="fragment fade-up">
@@ -105,6 +105,7 @@
 				<!-- Side Note -->
 				<section>
 
+					<h2>History</h2>
 					<h5>Side Note</h5>
 
 
@@ -140,18 +141,30 @@
 				<section>
 					<h2>Vendor Prefixes</h2>
 
-					<ul>
-						<li style="color: #e84238"><span style="color: #333">Android: -webkit-</span></li>
-						<li style="color: #e84238"><span style="color: #333">Chrome: -webkit-</span></li>
-						<li style="color: #e84238"><span style="color: #333">Firefox: -moz-</span></li>
-						<li style="color: #e84238"><span style="color: #333">Internet Explorer: -ms-</span></li>
-						<li style="color: #e84238"><span style="color: #333">iOS: -webkit-</span></li>
-						<li style="color: #e84238"><span style="color: #333">Opera: -o-</span></li>
-						<li style="color: #e84238"><span style="color: #333">Safari: -webkit-</span></li>
-					</ul>
+					<div class="fragment">
+						<ul>
+							<li style="color: #e84238"><span style="color: #333">Android: -webkit-</span></li>
+							<li style="color: #e84238"><span style="color: #333">Chrome: -webkit-</span></li>
+							<li style="color: #e84238"><span style="color: #333">Firefox: -moz-</span></li>
+							<li style="color: #e84238"><span style="color: #333">Internet Explorer: -ms-</span></li>
+							<li style="color: #e84238"><span style="color: #333">iOS: -webkit-</span></li>
+							<li style="color: #e84238"><span style="color: #333">Opera: -o-</span></li>
+							<li style="color: #e84238"><span style="color: #333">Safari: -webkit-</span></li>
+						</ul>
+					</div>
 
-					<div class="fragment fade-up">
-						<h5>*Example* - Old code with vendor prefixes.</h5>
+					<div class="fragment">
+						<section>
+								<pre style="box-shadow: none;">
+									<code data-trim data-noescape>
+										-webkit-transition: all 4s ease;
+										-moz-transition: all 4s ease;
+										-ms-transition: all 4s ease;
+										-o-transition: all 4s ease;
+										transition: all 4s ease;
+									</code>
+								</pre>
+						</section>
 					</div>
 
 					<!-- NOTES -->
@@ -168,7 +181,7 @@
 
 					<div class="fragment fade-up">
 						<h5>SCSS</h5>
-						<h5>LESS</h5>
+						<!--<h5>LESS</h5>-->
 					</div>
 
 					<!-- NOTES -->
@@ -177,36 +190,36 @@
 				</section>
 
 				<!-- CSS PRE PROCESSOR IN ACTION - LESS -->
-				<section>
-					<h2>Pre-processors</h2>
-					<h2>LESS</h2>
+				<!--<section>-->
+					<!--<h2>Pre-processors</h2>-->
+					<!--<h2>LESS</h2>-->
 
-					<div class="fragment fade-up">
-						<h5>Intro</h5>
-					</div>
-					<div class="fragment fade-up">
-						<h5>History</h5>
-					</div>
-					<div class="fragment fade-up">
-						<h5>Key Features</h5>
-					</div>
+					<!--<div class="fragment fade-up">-->
+						<!--<h5>Intro</h5>-->
+					<!--</div>-->
+					<!--<div class="fragment fade-up">-->
+						<!--<h5>History</h5>-->
+					<!--</div>-->
+					<!--<div class="fragment fade-up">-->
+						<!--<h5>Key Features</h5>-->
+					<!--</div>-->
 
-					<!-- NOTES -->
-					<aside class="notes">
-						Intro
-						- One of the more commonly used PreProcessors out there (used by Bootstrap 3 for example)
-						History
-						- Less was created in 2009 by Alexis Sellier, more commonly known as @cloudhead. Originally written in Ruby, it was then ported to JavaScript.
-						- Less was originally inspired by Sass, with a leaner feature set and a syntax closely matching CSS, which Sass did not have at the time. (Sass was later inspired by Less to create SCSS, its own CSS-like syntax.)
-						Key Features
-							Extending CSS with LESS functions:
-						- If statements
-						- String functions
-						- List functions
-						- Color functions
+					<!--&lt;!&ndash; NOTES &ndash;&gt;-->
+					<!--<aside class="notes">-->
+						<!--Intro-->
+						<!-- - One of the more commonly used PreProcessors out there (used by Bootstrap 3 for example)-->
+						<!--History-->
+						<!-- - Less was created in 2009 by Alexis Sellier, more commonly known as @cloudhead. Originally written in Ruby, it was then ported to JavaScript.-->
+						<!-- - Less was originally inspired by Sass, with a leaner feature set and a syntax closely matching CSS, which Sass did not have at the time. (Sass was later inspired by Less to create SCSS, its own CSS-like syntax.)-->
+						<!--Key Features-->
+							<!--Extending CSS with LESS functions:-->
+						<!-- - If statements-->
+						<!-- - String functions-->
+						<!-- - List functions-->
+						<!-- - Color functions-->
 
-					</aside>
-				</section>
+					<!--</aside>-->
+				<!--</section>-->
 
 				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
 				<section>
@@ -221,9 +234,78 @@
 					</div>
 					<div class="fragment fade-up">
 						<h5>Key Features</h5>
+						<section>
+							<pre style="box-shadow: none;">
+								<code data-trim data-noescape>
+									$color-grey: #333;
+
+									@mixin font-size($sizeValue: 12 ) {
+										font-size: (0.0625 * $sizeValue) + rem;
+									}
+
+									@function my-calculation-function($some-number, $another-number){
+									  @return $some-number + $another-number
+									}
+
+									.one {
+									  display: block;
+									}
+
+									.test {
+									  @extend .one;
+									  @include font-size(14);
+									  background: $color-grey;
+									}
+
+									@for $i from 1 through 10 {
+									  .box:nth-of-type(#{$i}) {
+										background-color: darken(cornflowerblue, 0% + $i);
+									  }
+									}
+								</code>
+							</pre>
+						</section>
 					</div>
 					<div class="fragment fade-up">
 						<h5>New Features</h5>
+						<section>
+							<pre style="box-shadow: none;">
+								<code data-trim data-noescape>
+									$colors: (
+									  light: #ccc,
+									  dark: #000
+									);
+
+									$brand-colors: (
+									  main: red,
+									  alternative: blue
+									);
+
+									$merged: map-merge($colors, $brand-colors);
+
+									%one {
+									  display: block;
+									}
+
+									.element {
+									  @extend %one;
+									  content: map-get($merged, alternative);
+									}
+
+									$map: (
+									  h1: 20px,
+									  h2: 16px,
+									  h3: 14px
+									);
+
+									@each $element, $size in $map {
+									  #{$element} {
+										font-size: $size;
+									  }
+									}
+								</code>
+							</pre>
+						</section>
 					</div>
 
 					<!-- NOTES -->
@@ -239,13 +321,16 @@
 
 						Key Features
 						- Variables
-						- Mixins
+						- Mixins & Function // Difference between the two is that function can only output a single value
+						- If Statements
 						- Extends
-						- Loops
+						- Loops // Each // For // While
 
 						New Features
-						- Maps
-						- Placeholders
+						- Maps:
+							You can you use maps with other SCSS features such as loops to generate CSS classes, such as teh @each loop
+						- Placeholders:
+							A cleaner way of using extend as the placeholder class does not render
 
 					</aside>
 				</section>
@@ -255,21 +340,68 @@
 					<h2>CSS-IN-JS</h2>
 
 					<div class="fragment fade-up">
-						<h5>*Example*: Styled Components, CSS Modules</h5>
+						<h5>History</h5>
+					</div>
+
+					<div class="fragment fade-up">
+						<h5>What its solving</h5>
+					</div>
+
+					<div class="fragment fade-up">
+						<h5>Limitations</h5>
+					</div>
+
+					<div class="fragment fade-up">
+						<h5>Benefits</h5>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
+						- History:
 						Inline styles and JSS is different
 						JSS will output unique classes
-						Not all CSS features can be aliased with JavaScript event handlers , many pseudo selectors (like :disabled, :before, :nth-child) aren’t possible, styling the html and body tags isn’t supported etc.
 
+						- What its solving:
 						CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
 
+						- Limitations:
+						Not all CSS features can be aliased with JavaScript event handlers , many pseudo selectors (like :disabled, :before, :nth-child) aren’t possible, in addition using media queries is not possible as well (media queries)
+
+						- Benefits:
 						Generates the minimum required CSS.
 						Offers good runtime performance.
 						Supports static and dynamic styles.
 						Helps to pre-render critical CSS.
+					</aside>
+				</section>
+
+				<!-- CSS-IN-JS (2) -->
+				<section>
+					<h2>CSS-IN-JS</h2>
+
+					<div class="fragment">
+						<h5>Example: Styled Components</h5>
+
+						<h5>*Example*</h5>
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<!-- CSS-IN-JS (3) -->
+				<section>
+					<h2>CSS-IN-JS</h2>
+
+					<div class="fragment">
+						<h5>Example: CSS Modules</h5>
+
+						<h5>*Example*</h5>
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
 					</aside>
 				</section>
 
@@ -295,11 +427,6 @@
 
 					</aside>
 				</section>
-
-
-
-
-
 
 				<!-- Why are we not writing CSS? -->
 				<section>
@@ -332,12 +459,10 @@
 
 					<div class="fragment fade-up">
 						Guil Hernandez
-
-						*Example*: Clip paths, blending , Backdrop filters
 					</div>
 
 					<div class="fragment fade-up">
-						MoOx (Maxime Thirouin)
+						Maxime Thirouin  (MoOx)
 					</div>
 
 					<div class="fragment fade-up">
@@ -350,8 +475,9 @@
 
 					<!-- NOTES -->
 					<aside class="notes">
-						Guil Hernandez
+						- Guil Hernandez
 
+						Teacher at Treehouse
 						CSS Variables
 						:matches()
 						Future Queries
@@ -361,16 +487,16 @@
 						Backdrop filters
 						Responsive Typography
 
-						Elliot Evans
+						- Elliot Evans
 
 						Component Based CSS
 						PostCSS / Babel style transpiling for CSS (postcss-preset-env)
 
-						MoOx (Maxime Thirouin)
+						- MoOx
 
 						Facebook Yoga - https://yogalayout.com/
 
-						Das Surma
+						- Das Surma
 
 						Houdini CSS
 					</aside>
@@ -380,6 +506,13 @@
 				<!-- Conclusion -->
 				<section>
 					<h3>Conclusion</h3>
+
+					<div class="fragment fade-up">
+						There is no clear path for CSS.
+
+						<img src="/images/three-paths.jpg"
+							 alt="Three Paths">
+					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
@@ -391,14 +524,11 @@
 
 				<!-- END SLIDE -->
 				<section>
-					<h4>Thanks for watching!</h4>
-
 					<div class="fragment fade-up">
 						<small>
 							<a href="https://github.com/Elliot-Evans-95/css-is-dead-presentation">https://github.com/Elliot-Evans-95/css-is-dead-presentation</a>
 						</small>
 					</div>
-
 				</section>
 
 			</div>
