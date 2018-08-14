@@ -125,11 +125,26 @@
 				<section>
 					<h2>CSS Level 3</h2>
 
+					<div class="fragment">
+						<h5>Examples</h5>
+						<ul>
+							<li style="color: #e84238"><span style="color: #333">:nth-child()</span></li>
+							<li style="color: #e84238"><span style="color: #333">:checked / :enabled / :disabled</span></li>
+							<li style="color: #e84238"><span style="color: #333">p ~ ul</span></li>
+						</ul>
+					</div>
+
 					<!-- NOTES -->
 					<aside class="notes">
 						In order to accelerate the standardization of non-problematic features, the Web Standards Working Group divided CSS in smaller components and were named modules.
 
 						Therefore some modules are already W3C Recommendations while others are still early Working Drafts. New modules are also added when new needs are identified.
+
+						The general sibling combinator consists of two simple selectors separated by a "tilde" (~) character.
+						It matches occurrences of elements matched by the second simple selector that are preceded by
+						an element matched by the first simple selector. Both elements must have the same parent
+
+						In this example the CSS rule will target ul elements that are preceded by a p element with the same parent:
 					</aside>
 				</section>
 
@@ -521,7 +536,7 @@
 
 					<div class="fragment fade-up">
 						<ul>
-							<li style="color: #e84238"><span style="color: #333">CSS Variables-</span></li>
+							<li style="color: #e84238"><span style="color: #333">CSS Variables</span></li>
 							<li style="color: #e84238"><span style="color: #333">:matches()</span></li>
 							<li style="color: #e84238"><span style="color: #333">Future Queries</span></li>
 							<li style="color: #e84238"><span style="color: #333">CSS Shapes</span></li>
@@ -544,10 +559,23 @@
 
 					<div class="fragment fade-up">
 						Maxime Thirouin  (MoOx)
+						- Open source developer
 					</div>
 
 					<div class="fragment fade-up">
 						Yoga
+
+						<pre style="box-shadow: none; height: 280px; margin: 0 auto;">
+							<code data-trim data-noescape>
+								YogaNode root = new YogaNode();
+								root.setWidth(500);
+								root.setHeight(300);
+								root.setAlignItems(CENTER);
+								root.setJustifyContent(CENTER);
+								root.setPadding(ALL, 20);
+							</code>
+						</pre>
+
 					</div>
 
 					<!-- NOTES -->
@@ -565,11 +593,19 @@
 
 
 					<div class="fragment fade-up">
-						Das Surma
+						Surma
+						- Web Advocate at Google
 					</div>
 
 					<div class="fragment fade-up">
 						Houdini CSS
+
+						<ul>
+							<li style="color: #e84238"><span style="color: #333">CSS Paint API</span></li>
+							<li style="color: #e84238"><span style="color: #333">Typed CSSOM (CSS Object Model or Cascading Style Sheets Object Model)</span></li>
+							<li style="color: #e84238"><span style="color: #333">Worklets</span></li>
+						</ul>
+
 					</div>
 
 					<!-- NOTES -->
@@ -577,6 +613,15 @@
 						- Das Surma
 
 						Houdini CSS
+
+						Worklets by themselves are not really useful. They are a concept introduced to make many of the later drafts possible.
+						So why a new thing when we already have workers? Houdini’s goal is to expose new APIs to allow web developers to hook
+						up their own code into the CSS engine and the surrounding systems. It’s probably not unrealistic to assume that some of
+						these code fragments will have to be run every. single. frame.
+
+						- Animation Worklet
+						- Paint Worklet
+						- Layout Worklet
 					</aside>
 				</section>
 
@@ -589,8 +634,7 @@
 					</div>
 
 					<div class="fragment fade-up">
-						Component Based CSS
-						PostCSS / Babel style transpiling for CSS (postcss-preset-env)
+						Component Based CSS with PostCSS
 					</div>
 
 					<!-- NOTES -->
@@ -599,6 +643,9 @@
 
 						Component Based CSS
 						PostCSS / Babel style transpiling for CSS (postcss-preset-env)
+
+						If PostCSS has a CLI and a configuration which is easy to use and follows new drafts for CSS
+						then PostCSS can be the babel of CSS
 					</aside>
 				</section>
 
