@@ -70,9 +70,9 @@
 					<!-- NOTES -->
 					<aside class="notes">
 						In 1994 Web is starting to be used as a platform for electronic publishing. One crucial part of a publishing platform is missing, however: There is no way to style documents. For example, there is no way to describe a newspaper-like layout in a Web page.
-
+						<br>
 						Writers of Web pages complained that they didn't have enough influence over how their pages looked. One of the first questions from an author new to the Web was how to change fonts and colors of elements. At that time, HTML did not provide this functionality.
-
+						<br>
 						Håkon published the first draft of the Cascading HTML Style Sheets proposal.
 					</aside>
 				</section>
@@ -90,11 +90,11 @@
 					<!-- NOTES -->
 					<aside class="notes">
 						Håkon published the first draft of the Cascading HTML Style Sheets proposal.
-
+						<br>
 						Cascading Style Sheets wasn't the only proposed style language at the time.
-
+						<br>
 						There was Pei Wei's language from the Viola browser, and around 10 other proposals for style sheet languages but, CSS had one feature that distinguished it from all the others: It took into account that on the Web, the style of a document couldn't be designed by either the author or the reader on their own, but that their wishes had to be combined, or cascaded, in some way; and, in fact, not just the reader's and the author's wishes, but also the capabilities of the display device and the browser.
-
+						<br>
 						At the end of 1995, Microsoft signaled that it was adding CSS support in its browser and Netscape was on board. CSS level 1 finally emerged as a W3C Recommendation in December 1996.
 					</aside>
 				</section>
@@ -112,11 +112,11 @@
 					<!-- NOTES -->
 					<aside class="notes">
 						Technology proposed by Netscape Communications Corporation in 1996 to provide facilities for defining the presentation of websites.
-
+						<br>
 						It was an alternative to the Cascading Style Sheets (CSS) technology.
-
+						<br>
 						Although Netscape submitted it to W3C, the technology was never accepted as a formal standard and it never gained much acceptance.
-
+						<br>
 						Only Netscape Communicator 4 supported JSSS, with the rival Internet Explorer web browser choosing not to implement the technology.
 					</aside>
 				</section>
@@ -137,13 +137,13 @@
 					<!-- NOTES -->
 					<aside class="notes">
 						In order to accelerate the standardization of non-problematic features, the Web Standards Working Group divided CSS in smaller components and were named modules.
-
+						<br>
 						Therefore some modules are already W3C Recommendations while others are still early Working Drafts. New modules are also added when new needs are identified.
-
+						<br>
 						The general sibling combinator consists of two simple selectors separated by a "tilde" (~) character.
 						It matches occurrences of elements matched by the second simple selector that are preceded by
 						an element matched by the first simple selector. Both elements must have the same parent
-
+						<br>
 						In this example the CSS rule will target ul elements that are preceded by a p element with the same parent:
 					</aside>
 				</section>
@@ -184,19 +184,6 @@
 					</aside>
 				</section>
 
-				<!-- PRE PROCESSOR OVERVIEW -->
-				<!--<section>-->
-
-					<!--<div class="fragment fade-up">-->
-						<!--<h5>SCSS</h5>-->
-					<!--</div>-->
-
-					<!--&lt;!&ndash; NOTES &ndash;&gt;-->
-					<!--<aside class="notes">-->
-						<!--&lt;!&ndash;&ndash;&gt;-->
-					<!--</aside>-->
-				<!--</section>-->
-
 				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
 				<section>
 					<h2>Pre-processors</h2>
@@ -216,10 +203,10 @@
 					<aside class="notes">
 						Intro
 						- Sass is a scripting language that is interpreted into Cascading Style Sheets (CSS), also known as a preprocessor. Sass can be compiled into CSS either by application, like CodeKit or Scout, or from the command line. Sass can be written in one of two syntaxes: SCSS, the newer, more CSS-like syntax, or Sass, the older, indent-dependent syntax. Sass can be used on most operating systems, including Mac, Windows and Linux.
-
+						<br>
 						History
 						- The trend of the concept of a preprocessor for web development for largely due to Ruby On Rails. If you build a Ruby Web App you will be coding CoffeeScript, Haml and SASS.
-
+						<br>
 						SCSS v SASS
 						- The key difference is that SASS is the one without the brackets.
 					</aside>
@@ -381,13 +368,13 @@
 						- History:
 						Inline styles and JSS is different
 						JSS will output unique classes
-
+						<br>
 						- What its solving:
 						CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
-
+						<br>
 						- Limitations:
 						Not all CSS features can be aliased with JavaScript event handlers , many pseudo selectors (like :disabled, :before, :nth-child) aren’t possible, in addition using media queries is not possible as well (media queries)
-
+						<br>
 						- Benefits:
 						Generates the minimum required CSS.
 						Offers good runtime performance.
@@ -486,17 +473,21 @@
 
 					<!-- NOTES -->
 					<aside class="notes">
-						- What uses Shadow DOM
+						- What uses Shadow DOM:
 						An important aspect of web components is encapsulation — being able to keep the markup structure, style, and behavior hidden and separate from other code on the page so that different parts do not clash, and the code can be kept nice and clean. The Shadow DOM API is a key part of this, providing a way to attach a hidden separate DOM to an element. This article covers the basics of Shadow DOM.
-
-						- Details
+						<br>
+						- Details:
 						Shadow DOM allows hidden DOM trees to be attached to elements in the regular DOM tree — this shadow DOM tree starts with a shadow root, underneath which can be attached to any elements you want, in the same way as the normal DOM.
-
-						- Terminology
+						<br>
+						- Terminology:
 						There are some bits of shadow DOM terminology to be aware of:
+						<br>
 						Shadow host: The regular DOM node that the shadow DOM is attached to.
+						<br>
 						Shadow tree: The DOM tree inside the shadow DOM.
+						<br>
 						Shadow boundary: the place where the shadow DOM ends, and the regular DOM begins.
+						<br>
 						Shadow root: The root node of the shadow tree.
 					</aside>
 				</section>
@@ -506,16 +497,12 @@
 					<h3>Why are we not writing CSS?</h3>
 
 					<ul>
-						<li style="color: #e84238"><span style="color: #333">Local v global styles</span></li>
-						<li style="color: #e84238"><span style="color: #333">How you write css</span></li>
-						<li style="color: #e84238"><span style="color: #333">Browser support</span></li>
-						<li style="color: #e84238"><span style="color: #333">No local variables</span></li>
-						<li style="color: #e84238"><span style="color: #333">Implicit dependencies</span></li>
-						<li style="color: #e84238"><span style="color: #333">No dead code elimination</span></li>
-						<li style="color: #e84238"><span style="color: #333">No code minification</span></li>
-						<li style="color: #e84238"><span style="color: #333">No sharing of constants</span></li>
-						<li style="color: #e84238"><span style="color: #333">Non-deterministic resolution</span></li>
-						<li style="color: #e84238"><span style="color: #333">No isolation</span></li>
+						<li style="color: #e84238"><span style="color: #333">Nesting Structure (SCSS)</span></li>
+						<li style="color: #e84238"><span style="color: #333">Browser support (SCSS)</span></li>
+						<li style="color: #e84238"><span style="color: #333">No local styles (CSS Modules)</span></li>
+						<li style="color: #e84238"><span style="color: #333">Implicit dependencies (ALL)</span></li>
+						<li style="color: #e84238"><span style="color: #333">No dead code elimination (CSS-IN-JS)</span></li>
+						<li style="color: #e84238"><span style="color: #333">No encapsulation (Shadow-DOM)</span></li>
 					</ul>
 
 					<!-- NOTES -->
@@ -580,10 +567,12 @@
 
 					<!-- NOTES -->
 					<aside class="notes">
-						- MoOx
-
 						Yoga is made by facebook as an open source, cross platform solution to creating flexible layouts
 						https://yogalayout.com/
+						<br>
+						Idea of using a 3rd party to write and style your webpage/webapp
+						<br>
+						Another example: cassowary
 					</aside>
 				</section>
 
@@ -610,15 +599,8 @@
 
 					<!-- NOTES -->
 					<aside class="notes">
-						- Das Surma
-
-						Houdini CSS
-
-						Worklets by themselves are not really useful. They are a concept introduced to make many of the later drafts possible.
-						So why a new thing when we already have workers? Houdini’s goal is to expose new APIs to allow web developers to hook
-						up their own code into the CSS engine and the surrounding systems. It’s probably not unrealistic to assume that some of
-						these code fragments will have to be run every. single. frame.
-
+						Houdini’s goal is to expose new APIs to allow web developers to hook up their own code into the CSS engine and the surrounding systems.
+						<br>
 						- Animation Worklet
 						- Paint Worklet
 						- Layout Worklet
@@ -639,11 +621,8 @@
 
 					<!-- NOTES -->
 					<aside class="notes">
-						- Elliot Evans
-
-						Component Based CSS
 						PostCSS / Babel style transpiling for CSS (postcss-preset-env)
-
+						<br>
 						If PostCSS has a CLI and a configuration which is easy to use and follows new drafts for CSS
 						then PostCSS can be the babel of CSS
 					</aside>
