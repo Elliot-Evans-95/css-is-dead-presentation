@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white__custom.css">
 
+		<link rel="stylesheet" href="css/theme/css-is-dead-theme.css">
+
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -31,6 +33,17 @@
 					<h1>CSS is dead, long live CSS</h1>
 					<h5>A look at the past, present and the future of CSS</h5>
 
+					<img src="https://dl.dropboxusercontent.com/s/jnkqulq2mq6jdvu/css-is-awesome.jpg" alt="CSS is Awesome">
+
+					<!-- NOTES -->
+					<aside class="notes">
+						<!---->
+					</aside>
+				</section>
+
+				<!-- ABOUT ME -->
+				<section>
+				
 					<!-- NOTES -->
 					<aside class="notes">
 						<!---->
@@ -41,436 +54,431 @@
 				<section>
 					<h2>To cover:</h2>
 					<ul>
-						<li style="color: #e84238"><span style="color: #333">History</span></li>
-						<li style="color: #e84238"><span style="color: #333">CSS Level 3</span></li>
-						<li style="color: #e84238"><span style="color: #333">Vendor Prefixes</span></li>
-						<li style="color: #e84238"><span style="color: #333">Preprocessors</span></li>
-						<li style="color: #e84238"><span style="color: #333">CSS-in-JS</span></li>
-						<li style="color: #e84238"><span style="color: #333">Shadow-DOM</span></li>
-						<li style="color: #e84238"><span style="color: #333">Future of CSS</span></li>
+						<li class="bullet-point-color">
+							<span class="text-color">History</span>
+						</li>
+						<li class="bullet-point-color">
+							<span class="text-color">Past use of CSS</span>
+						</li>
+						<li class="bullet-point-color">
+							<span class="text-color">Present use of CSS</span>
+						</li>
+						<li class="bullet-point-color">
+							<span class="text-color">Future use of CSS</span>
+						</li>
 					</ul>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						There are quite a few things to cover in this topic but before I go into why there so many
-						current ways of writing CSS I would cover a brief history of it
 					</aside>
 				</section>
 
 				<!-- History (1) -->
 				<section>
 
-					<h2>History</h2>
-
-
-					<div class="fragment fade-up">
-						<h5>Style Documents</h5>
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						In 1994 Web is starting to be used as a platform for electronic publishing. One crucial part of a publishing platform is missing, however: There is no way to style documents. For example, there is no way to describe a newspaper-like layout in a Web page.
-						<br>
-						Writers of Web pages complained that they didn't have enough influence over how their pages looked. One of the first questions from an author new to the Web was how to change fonts and colors of elements. At that time, HTML did not provide this functionality.
-						<br>
-						Håkon published the first draft of the Cascading HTML Style Sheets proposal.
-					</aside>
+						<h2>History</h2>
+	
+						<div class="fragment fade-up">
+							<h5>Style Documents</h5>
+						</div>
+	
+						<!-- NOTES -->
+						<aside class="notes">
+							In 1994 Web is starting to be used as a platform for electronic publishing. One crucial part of a publishing platform is missing, however: There is no way to style documents. For example, there is no way to describe a newspaper-like layout in a Web page.
+							<br>
+							Writers of Web pages complained that they didn't have enough influence over how their pages looked. One of the first questions from an author new to the Web was how to change fonts and colors of elements. At that time, HTML did not provide this functionality.
+							<br>
+							Håkon published the first draft of the Cascading HTML Style Sheets proposal.
+							<br>
+							In 1995, Microsoft added CSS support in its browser and so did Netscape.
+							<br>
+							CSS level 1 released in 1996.
+						</aside>
 				</section>
 
 				<!-- History (2) -->
 				<section>
 
-					<h2>History</h2>
+						<h2>History</h2>
+						<h5>Side Note</h5>
+	
+						<div class="fragment fade-up">
+							<h5>JSSS - JavaScript Style Sheets</h5>
+						</div>
+	
+						<!-- NOTES -->
+						<aside class="notes">
+							Technology proposed by Netscape Communications Corporation in 1996.
+							<br>
+							It was an alternative to CSS.
+							<br>
+							The technology was never accepted as a formal standard and it never gained much acceptance.
+						</aside>
+				</section>
 
+				<!-- Past (1) -->
+				<section>
+
+					<h2>Past</h2>
 
 					<div class="fragment fade-up">
-						<h5>Not just CSS</h5>
+						<h5>Table</h5>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						Håkon published the first draft of the Cascading HTML Style Sheets proposal.
+						During 1996 the typical way to style a document was to use the display property 'table'.
 						<br>
-						Cascading Style Sheets wasn't the only proposed style language at the time.
+
+						TABLE EXAMPLE HERE
+
 						<br>
-						There was Pei Wei's language from the Viola browser, and around 10 other proposals for style sheet languages but, CSS had one feature that distinguished it from all the others: It took into account that on the Web, the style of a document couldn't be designed by either the author or the reader on their own, but that their wishes had to be combined, or cascaded, in some way; and, in fact, not just the reader's and the author's wishes, but also the capabilities of the display device and the browser.
-						<br>
-						At the end of 1995, Microsoft signaled that it was adding CSS support in its browser and Netscape was on board. CSS level 1 finally emerged as a W3C Recommendation in December 1996.
+						Table is still being used today, currently its the de facto way of styling emails.
 					</aside>
 				</section>
 
-				<!-- Side Note -->
+				<!-- Past (2) -->
 				<section>
 
-					<h2>History</h2>
-					<h5>Side Note</h5>
+					<h2>Past</h2>
+
 
 					<div class="fragment fade-up">
-						<h5>JSSS - JavaScript Style Sheets</h5>
+						<h5>Problems with Table 👎</h5>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						Technology proposed by Netscape Communications Corporation in 1996 to provide facilities for defining the presentation of websites.
+						Tables Are For Data
 						<br>
-						It was an alternative to the Cascading Style Sheets (CSS) technology.
+						Strict (non-linear) Markup
 						<br>
-						Although Netscape submitted it to W3C, the technology was never accepted as a formal standard and it never gained much acceptance.
+						Limited Styling	
 						<br>
-						Only Netscape Communicator 4 supported JSSS, with the rival Internet Explorer web browser choosing not to implement the technology.
+						Accessibility Nightmare
+						<br>
+						SEO Problem
 					</aside>
 				</section>
 
-				<!--Level 3 -->
+				<!-- Past (3) -->
 				<section>
-					<h2>CSS Level 3</h2>
+
+					<h2>Past</h2>
+
+
+					<div class="fragment fade-up">
+						<h5>Floats</h5>
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						Floats
+						<br>
+						Clearfix Hack
+						<br>
+						Overflow hack	
+					</aside>
+				</section>
+
+				<!-- Past (4) -->
+				<section>
+
+					<h2>Past</h2>
+
+					<div class="fragment fade-up">
+						<h5>Benefits and drawbacks with Float</h5>
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						👍 Flexible Markup & Nesting!
+						<br>
+						👎 Explicit Widths
+					</aside>
+				</section>
+
+				<!-- Past (5) -->
+				<section>
+					<h2>Past</h2>
+
+					<div class="fragment fade-up">
+						<h5>960 Grid and the float grid system - 2010</h5>
+					</div>
 
 					<div class="fragment">
-						<h5>Examples</h5>
-						<ul>
-							<li style="color: #e84238"><span style="color: #333">:nth-child()</span></li>
-							<li style="color: #e84238"><span style="color: #333">:checked / :enabled / :disabled</span></li>
-							<li style="color: #e84238"><span style="color: #333">p ~ ul</span></li>
-						</ul>
+						gutters slpit left and right
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						In order to accelerate the standardization of non-problematic features, the Web Standards Working Group divided CSS in smaller components and were named modules.
-						<br>
-						Therefore some modules are already W3C Recommendations while others are still early Working Drafts. New modules are also added when new needs are identified.
-						<br>
-						The general sibling combinator consists of two simple selectors separated by a "tilde" (~) character.
-						It matches occurrences of elements matched by the second simple selector that are preceded by
-						an element matched by the first simple selector. Both elements must have the same parent
-						<br>
-						In this example the CSS rule will target ul elements that are preceded by a p element with the same parent:
+
+					</aside>
+				</section>
+
+				<!-- Past (6) -->
+				<section>
+					<h2>Past</h2>
+
+					<div class="fragment fade-up">
+						<h5>Benfitis and drawbacks of the float grid system</h5>
+					</div>
+
+					<div class="fragment">
+							👍
+							Shared Browser Hacks
+
+							👍
+							Consistent Patterns
+
+							👍
+							Developers Can Ignore CSS
+
+							👎
+							Frameworks Lock You In
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<!-- Present (1) -->
+				<section>
+					<h2>Present</h2>
+
+					<div class="fragment fade-up">
+						<h5>CSS Level 3</h5>
+						<h5>Flexbox - 2013</h5>
+					</div>
+
+					<div class="fragment">
+							👍 Finally Not a Hack!!
+
+							👍 Element Driven
+
+							👍 Relative & ideal sizing
+
+							👍 control the axis and alignment
+
+							👍 control order
+
+							👎 Nesting Matters Too Much
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<!-- Present (2) -->
+				<section>
+					<h2>Present</h2>
+
+					<div class="fragment fade-up">
+						<h5>CSS-in-JS</h5>
+					</div>
+
+					<div class="fragment fade-up">
+							<h5>History</h5>
+						</div>
+	
+						<div class="fragment fade-up">
+							<h5>What its solving</h5>
+						</div>
+	
+						<div class="fragment fade-up">
+							<h5>Limitations</h5>
+						</div>
+	
+						<div class="fragment fade-up">
+							<h5>Benefits</h5>
+						</div>
+	
+						<div class="fragment">
+								<h5>Example: Styled Components</h5>
+		
+								<iframe src="https://codesandbox.io/embed/pwv2yrom00" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+							</div>
+	
+						<!-- NOTES -->
+						<aside class="notes">
+							- History:
+							Inline styles and JSS is different
+							JSS will output unique classes
+							<br>
+							- What its solving:
+							CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
+							<br>
+							- Limitations:
+							Not all CSS features can be aliased with JavaScript event handlers , many pseudo selectors (like :disabled, :before, :nth-child) aren’t possible, in addition using media queries is not possible as well (media queries)
+							<br>
+							- Benefits:
+							Generates the minimum required CSS.
+							Offers good runtime performance.
+							Supports static and dynamic styles.
+							Helps to pre-render critical CSS.
+						</aside>
+
+					<!-- NOTES -->
+					<aside class="notes">
+
 					</aside>
 				</section>
 
 				<!-- WHY PRE PROCESSORS EXIST -->
 				<section>
-					<h2>Vendor Prefixes</h2>
-
-					<div class="fragment">
-						<ul>
-							<li style="color: #e84238"><span style="color: #333">Android: -webkit-</span></li>
-							<li style="color: #e84238"><span style="color: #333">Chrome: -webkit-</span></li>
-							<li style="color: #e84238"><span style="color: #333">Firefox: -moz-</span></li>
-							<li style="color: #e84238"><span style="color: #333">Internet Explorer: -ms-</span></li>
-							<li style="color: #e84238"><span style="color: #333">iOS: -webkit-</span></li>
-							<li style="color: #e84238"><span style="color: #333">Opera: -o-</span></li>
-							<li style="color: #e84238"><span style="color: #333">Safari: -webkit-</span></li>
-						</ul>
-					</div>
-
-					<div class="fragment fade-up">
-						<pre style="box-shadow: none;">
-							<code data-trim data-noescape>
-								-webkit-transition: all 4s ease;
-								-moz-transition: all 4s ease;
-								-ms-transition: all 4s ease;
-								-o-transition: all 4s ease;
-								transition: all 4s ease;
-							</code>
-						</pre>
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						When new modules were being discussed they hit different browsers at different times. For example, the webkit-powered browsers (Safari and Chrome) were the first ones to introduce some of the animation-style properties like transform and transition. By using vendor prefixed properties, web designers were able to use those new features in their work and have them seen on the browsers that supported them right away, instead of having to wait for every other browser manufacturer to catch up!
-
-						One of the reasons why Pre-processors became is popular is due to there innate ability to hide vendor prefixes away so developers didn’t have to write them.
-					</aside>
+						<h2>Vendor Prefixes</h2>
+						<h2>Faster way of writing the grid system or creating your own</h2>
+	
+						<div class="fragment">
+							<ul>
+								<li class="bullet-point-color"><span class="text-color">Android: -webkit-</span></li>
+								<li class="bullet-point-color"><span class="text-color">Chrome: -webkit-</span></li>
+								<li class="bullet-point-color"><span class="text-color">Firefox: -moz-</span></li>
+								<li class="bullet-point-color"><span class="text-color">Internet Explorer: -ms-</span></li>
+								<li class="bullet-point-color"><span class="text-color">iOS: -webkit-</span></li>
+								<li class="bullet-point-color"><span class="text-color">Opera: -o-</span></li>
+								<li class="bullet-point-color"><span class="text-color">Safari: -webkit-</span></li>
+							</ul>
+						</div>
+	
+						<div class="fragment fade-up">
+							<pre style="box-shadow: none;">
+								<code data-trim data-noescape>
+									-webkit-transition: all 4s ease;
+									-moz-transition: all 4s ease;
+									-ms-transition: all 4s ease;
+									-o-transition: all 4s ease;
+									transition: all 4s ease;
+								</code>
+							</pre>
+						</div>
+	
+						<!-- NOTES -->
+						<aside class="notes">
+							When new modules were being discussed they hit different browsers at different times. For example, the webkit-powered browsers (Safari and Chrome) were the first ones to introduce some of the animation-style properties like transform and transition. By using vendor prefixed properties, web designers were able to use those new features in their work and have them seen on the browsers that supported them right away, instead of having to wait for every other browser manufacturer to catch up!
+	
+							One of the reasons why Pre-processors became is popular is due to there innate ability to hide vendor prefixes away so developers didn’t have to write them.
+						</aside>
 				</section>
-
+	
 				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
 				<section>
 					<h2>Pre-processors</h2>
 
 					<div class="fragment fade-up">
+						Variables | Mixins | Functions
 						<h5>SCSS</h5>
 					</div>
 
-					<div class="fragment fade-up">
-						<h5>Intro</h5>
-					</div>
-					<div class="fragment fade-up">
-						<h5>History</h5>
-					</div>
-
 					<!-- NOTES -->
 					<aside class="notes">
-						Intro
-						- Sass is a scripting language that is interpreted into Cascading Style Sheets (CSS), also known as a preprocessor. Sass can be compiled into CSS either by application, like CodeKit or Scout, or from the command line. Sass can be written in one of two syntaxes: SCSS, the newer, more CSS-like syntax, or Sass, the older, indent-dependent syntax. Sass can be used on most operating systems, including Mac, Windows and Linux.
-						<br>
-						History
-						- The trend of the concept of a preprocessor for web development for largely due to Ruby On Rails. If you build a Ruby Web App you will be coding CoffeeScript, Haml and SASS.
-						<br>
-						SCSS v SASS
-						- The key difference is that SASS is the one without the brackets.
+						SCSS is a scripting language that is interpreted into Cascading Style Sheets (CSS), also known as a preprocessor. Sass can be compiled into CSS either by application, like CodeKit or Scout, or from the command line. Sass can be written in one of two syntaxes: SCSS, the newer, more CSS-like syntax, or Sass, the older, indent-dependent syntax. Sass can be used on most operating systems, including Mac, Windows and Linux.
 					</aside>
 				</section>
 
+				<!-- Future (1) -->
 				<section>
-					<h2>SCSS</h2>
-
-					<div class="fragment fade-up">
-
-						<h5>Key Features</h5>
-
-						<div class="fragment">
-							Variables | Mixins | Functions
-						</div>
-
+						<h2>Future</h2>
+	
 						<div class="fragment fade-up">
-							<pre style="box-shadow: none;">
-								<code data-trim data-noescape>
-									$color-grey: #333;
-
-									@mixin font-size($sizeValue: 12 ) {
-										font-size: (0.0625 * $sizeValue) + rem;
-									}
-
-									@function my-calculation-function($some-number, $another-number){
-									  @return $some-number + $another-number
-									}
-
-									.test {
-									  @include font-size(14);
-									  background: $color-grey;
-									}
-
-								</code>
-							</pre>
+							<h5>CSS Grid</h5>
 						</div>
-
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						Key Features
-						- Variables
-						- Mixins & Function // Difference between the two is that function can only output a single value
-					</aside>
-				</section>
-
-				<section>
-					<h2>SCSS</h2>
-
-					<div class="fragment fade-up">
-
-						<h5>Key Features</h5>
-
+	
 						<div class="fragment">
-							Statements | Extends | Loops
 						</div>
-
-						<div class="fragment fade-up">
-							<pre style="box-shadow: none;">
-								<code data-trim data-noescape>
-									.one {
-									  display: block;
-									}
-
-									.test {
-									  @extend .one;
-									}
-
-									@for $i from 1 through 10 {
-									  .box:nth-of-type(#{$i}) {
-										background-color: darken(cornflowerblue, 0% + $i);
-									  }
-									}
-								</code>
-							</pre>
-						</div>
-
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						Key Features
-						- If Statements
-						- Extends
-						- Loops // Each // For // While
-					</aside>
+	
+						<!-- NOTES -->
+						<aside class="notes">
+	
+						</aside>
 				</section>
 
+				<!-- Future (2) -->
 				<section>
-					<h2>SCSS</h2>
+					<h2>Future</h2>
 
 					<div class="fragment fade-up">
-
-						<h5>New Features</h5>
-
-						<div class="fragment">
-							Maps | Placeholders
-						</div>
-
-						<div class="fragment fade-up">
-							<pre style="box-shadow: none;">
-								<code data-trim data-noescape>
-									%one {
-									  display: block;
-									}
-									.element {
-									  @extend %one;
-									}
-
-									$map: ( h1: 20px, h2: 16px, h3: 14px );
-
-									@each $element, $size in $map {
-									  #{$element} {
-										font-size: $size;
-									  }
-									}
-								</code>
-							</pre>
-						</div>
-
+						<h5>CSS Variables</h5>
 					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						New Features
-
-						- Maps:
-						You can you use maps with other SCSS features such as loops to generate CSS classes, such as teh @each loop
-
-						- Placeholders:
-						A cleaner way of using extend as the placeholder class does not render
-					</aside>
-				</section>
-
-				<!-- CSS-IN-JS -->
-				<section>
-					<h2>CSS-IN-JS</h2>
-
-					<div class="fragment fade-up">
-						<h5>History</h5>
-					</div>
-
-					<div class="fragment fade-up">
-						<h5>What its solving</h5>
-					</div>
-
-					<div class="fragment fade-up">
-						<h5>Limitations</h5>
-					</div>
-
-					<div class="fragment fade-up">
-						<h5>Benefits</h5>
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						- History:
-						Inline styles and JSS is different
-						JSS will output unique classes
-						<br>
-						- What its solving:
-						CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
-						<br>
-						- Limitations:
-						Not all CSS features can be aliased with JavaScript event handlers , many pseudo selectors (like :disabled, :before, :nth-child) aren’t possible, in addition using media queries is not possible as well (media queries)
-						<br>
-						- Benefits:
-						Generates the minimum required CSS.
-						Offers good runtime performance.
-						Supports static and dynamic styles.
-						Helps to pre-render critical CSS.
-					</aside>
-				</section>
-
-				<!-- CSS-IN-JS (2) -->
-				<section>
-					<h2>CSS-IN-JS</h2>
 
 					<div class="fragment">
-						<h5>Example: Styled Components</h5>
-
-						<iframe src="https://codesandbox.io/embed/rkmnrbye4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
+
 					</aside>
 				</section>
 
-				<!-- CSS-IN-JS (3) -->
+				<!-- Future (3) -->
 				<section>
-					<h2>CSS-IN-JS</h2>
+					<h2>Future</h2>
+
+					<div class="fragment fade-up">
+						<h5>Hudini CSS</h5>
+					</div>
 
 					<div class="fragment">
-						<h5>Example: CSS Modules</h5>
-
-						<pre style="box-shadow: none; height: 280px; margin: 0 auto;">
-							<code data-trim data-noescape>
-								:local .className {
-									color: red;
-								}
-								:local(.className .subClass) {
-									color: green;
-								}
-								:local .className .subClass :global(.global-class-name) {
-									color: blue;
-								}
-							</code>
-						</pre>
-
-						<pre style="box-shadow: none; height: 280px; margin: 0 auto;">
-							<code data-trim data-noescape>
-								._23_aKvs-b8bW2Vg3fwHozO { color: red; }
-								._23_aKvs-b8bW2Vg3fwHozO ._13LGdX8RMStbBE9w-t0gZ1 {
-									color: green;
-								}
-								._23_aKvs-b8bW2Vg3fwHozO ._13LGdX8RMStbBE9w-t0gZ1
-								.global-class-name { color: blue; }
-							</code>
-						</pre>
+							<ul>
+								<li class="bullet-point-color"><span class="text-color">CSS Paint API</span></li>
+								<li class="bullet-point-color"><span class="text-color">Typed CSSOM (CSS Object Model or Cascading Style Sheets Object Model)</span></li>
+								<li class="bullet-point-color"><span class="text-color">Worklets</span></li>
+							</ul>
 					</div>
-
+	
 					<!-- NOTES -->
 					<aside class="notes">
+						Houdini’s goal is to expose new APIs to allow web developers to hook up their own code into the CSS engine and the surrounding systems.
+						<br>
+						- Animation Worklet
+						- Paint Worklet
+						- Layout Worklet
 					</aside>
 				</section>
 
-				<!-- Shadow-DOM -->
+				<!-- Future (4) -->
 				<section>
-					<h2>Shadow-DOM</h2>
+					<h2>Future</h2>
 
 					<div class="fragment fade-up">
-						<h5>Web Components</h5>
+						<h5>Shadow DOM</h5>
 					</div>
 
 					<div class="fragment fade-up">
-						<h5>Encapsulation</h5>
-					</div>
-
-					<div class="fragment fade-up">
-						<h5>Terminology</h5>
-					</div>
-
-					<div class="fragment fade-up">
-						<!--<h5>Example</h5>-->
-
-						<pre style="box-shadow: none;">
-							<code data-trim data-noescape>
-								style.textContent = `
-									:host {
-									  display: inline-block;
-									}
-
-									.lh-button {
-									  background: gray;
-									  color: red;
-									}
-								`;
-							</code>
-						</pre>
-					</div>
-
+							<h5>Web Components</h5>
+						</div>
+	
+						<div class="fragment fade-up">
+							<h5>Encapsulation</h5>
+						</div>
+	
+						<div class="fragment fade-up">
+							<h5>Terminology</h5>
+						</div>
+	
+						<div class="fragment fade-up">
+							<!--<h5>Example</h5>-->
+	
+							<pre style="box-shadow: none;">
+								<code data-trim data-noescape>
+									style.textContent = `
+										:host {
+											display: inline-block;
+										}
+	
+										.lh-button {
+											background: gray;
+											color: red;
+										}
+									`;
+								</code>
+							</pre>
+						</div>
+	
 					<!-- NOTES -->
 					<aside class="notes">
 						- What uses Shadow DOM:
@@ -492,158 +500,22 @@
 					</aside>
 				</section>
 
-				<!-- Why are we not writing CSS? -->
+				<!-- Conclusion -->
 				<section>
-					<h3>Why are we not writing CSS?</h3>
+					<h3>Are we still writing CSS?</h3>
 
 					<ul>
-						<li style="color: #e84238"><span style="color: #333">Nesting Structure (SCSS)</span></li>
-						<li style="color: #e84238"><span style="color: #333">Browser support (SCSS)</span></li>
-						<li style="color: #e84238"><span style="color: #333">No local styles (CSS Modules)</span></li>
-						<li style="color: #e84238"><span style="color: #333">Implicit dependencies (ALL)</span></li>
-						<li style="color: #e84238"><span style="color: #333">No dead code elimination (CSS-IN-JS)</span></li>
-						<li style="color: #e84238"><span style="color: #333">No encapsulation (Shadow-DOM)</span></li>
+						<li class="bullet-point-color"><span class="text-color">Nesting Structure (SCSS)</span></li>
+						<li class="bullet-point-color"><span class="text-color">Browser support (SCSS)</span></li>
+						<li class="bullet-point-color"><span class="text-color">No local styles (CSS Modules)</span></li>
+						<li class="bullet-point-color"><span class="text-color">Implicit dependencies (ALL)</span></li>
+						<li class="bullet-point-color"><span class="text-color">No dead code elimination (CSS-IN-JS)</span></li>
+						<li class="bullet-point-color"><span class="text-color">No encapsulation (Shadow-DOM)</span></li>
 					</ul>
 
 					<!-- NOTES -->
 					<aside class="notes">
 						<!---->
-					</aside>
-
-				</section>
-
-				<!-- Future of CSS -->
-				<section>
-					<h2>Future of CSS</h2>
-
-					<div class="fragment fade-up">
-						<h5>Guil Hernandez</h5>
-						- Teacher at Treehouse
-					</div>
-
-					<div class="fragment fade-up">
-						<ul>
-							<li style="color: #e84238"><span style="color: #333">CSS Variables</span></li>
-							<li style="color: #e84238"><span style="color: #333">:matches()</span></li>
-							<li style="color: #e84238"><span style="color: #333">Future Queries</span></li>
-							<li style="color: #e84238"><span style="color: #333">CSS Shapes</span></li>
-							<li style="color: #e84238"><span style="color: #333">Clip paths</span></li>
-							<li style="color: #e84238"><span style="color: #333">blending</span></li>
-							<li style="color: #e84238"><span style="color: #333">Backdrop filters</span></li>
-							<li style="color: #e84238"><span style="color: #333">Responsive Typography</span></li>
-						</ul>
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						Idea that that the future of CSS is to extend the language to be able to do more visual effects on a site
-					</aside>
-				</section>
-
-				<!-- Future of CSS (2) -->
-				<section>
-					<h2>Future of CSS</h2>
-
-					<div class="fragment fade-up">
-						Maxime Thirouin  (MoOx)
-						- Open source developer
-					</div>
-
-					<div class="fragment fade-up">
-						Yoga
-
-						<pre style="box-shadow: none; height: 280px; margin: 0 auto;">
-							<code data-trim data-noescape>
-								YogaNode root = new YogaNode();
-								root.setWidth(500);
-								root.setHeight(300);
-								root.setAlignItems(CENTER);
-								root.setJustifyContent(CENTER);
-								root.setPadding(ALL, 20);
-							</code>
-						</pre>
-
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						Yoga is made by facebook as an open source, cross platform solution to creating flexible layouts
-						https://yogalayout.com/
-						<br>
-						Idea of using a 3rd party to write and style your webpage/webapp
-						<br>
-						Another example: cassowary
-					</aside>
-				</section>
-
-				<!-- Future of CSS (3) -->
-				<section>
-					<h2>Future of CSS</h2>
-
-
-					<div class="fragment fade-up">
-						Surma
-						- Web Advocate at Google
-					</div>
-
-					<div class="fragment fade-up">
-						Houdini CSS
-
-						<ul>
-							<li style="color: #e84238"><span style="color: #333">CSS Paint API</span></li>
-							<li style="color: #e84238"><span style="color: #333">Typed CSSOM (CSS Object Model or Cascading Style Sheets Object Model)</span></li>
-							<li style="color: #e84238"><span style="color: #333">Worklets</span></li>
-						</ul>
-
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						Houdini’s goal is to expose new APIs to allow web developers to hook up their own code into the CSS engine and the surrounding systems.
-						<br>
-						- Animation Worklet
-						- Paint Worklet
-						- Layout Worklet
-					</aside>
-				</section>
-
-				<!-- Future of CSS (4) -->
-				<section>
-					<h2>Future of CSS</h2>
-
-					<div class="fragment fade-up">
-						Elliot Evans
-					</div>
-
-					<div class="fragment fade-up">
-						Component Based CSS with PostCSS
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						PostCSS / Babel style transpiling for CSS (postcss-preset-env)
-						<br>
-						If PostCSS has a CLI and a configuration which is easy to use and follows new drafts for CSS
-						then PostCSS can be the babel of CSS
-					</aside>
-				</section>
-
-
-				<!-- Conclusion -->
-				<section>
-					<h3>Conclusion</h3>
-
-					<div class="fragment fade-up">
-						There is no clear path for CSS.
-
-						<img src="/images/three-paths.jpg"
-							 alt="Three Paths">
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						Either leverage the web platform (by updating it and creating new solutions that will solve problems) or
-						create tools with will fix the issue developers have.
 					</aside>
 
 				</section>
