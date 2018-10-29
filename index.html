@@ -7,7 +7,7 @@
 		<title>CSS is dead, long live CSS</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white__custom.css">
+		<!-- <link rel="stylesheet" href="css/theme/white__custom.css"> -->
 
 		<link rel="stylesheet" href="css/theme/css-is-dead-theme.css">
 
@@ -43,6 +43,14 @@
 
 				<!-- ABOUT ME -->
 				<section>
+
+					Elliot Evans
+
+					Web Application Developer
+
+					Work at Codeweavers
+
+					<img src="" alt="">
 				
 					<!-- NOTES -->
 					<aside class="notes">
@@ -81,18 +89,25 @@
 						<div class="fragment fade-up">
 							<h5>Style Documents</h5>
 						</div>
-	
-						<!-- NOTES -->
-						<aside class="notes">
-							In 1994 Web is starting to be used as a platform for electronic publishing. One crucial part of a publishing platform is missing, however: There is no way to style documents. For example, there is no way to describe a newspaper-like layout in a Web page.
-							<br>
-							Writers of Web pages complained that they didn't have enough influence over how their pages looked. One of the first questions from an author new to the Web was how to change fonts and colors of elements. At that time, HTML did not provide this functionality.
+
+						<div class="fragment fade-up">
+							In 1994 the web is starting to be used as a platform for electronic publishing. but there is no way to style documents.
 							<br>
 							Håkon published the first draft of the Cascading HTML Style Sheets proposal.
 							<br>
-							In 1995, Microsoft added CSS support in its browser and so did Netscape.
+							In 1995, Internet Explorer and Netscape added CSS support in there browsers.
 							<br>
 							CSS level 1 released in 1996.
+						</div>
+
+						<div class="fragment fade-up">
+							1995 WEBSITE EXAMPLE
+							<img src="" alt="">
+						</div>
+	
+						<!-- NOTES -->
+						<aside class="notes">
+							<!--  -->
 						</aside>
 				</section>
 
@@ -105,14 +120,23 @@
 						<div class="fragment fade-up">
 							<h5>JSSS - JavaScript Style Sheets</h5>
 						</div>
-	
-						<!-- NOTES -->
-						<aside class="notes">
-							Technology proposed by Netscape Communications Corporation in 1996.
+
+						<div class="fragment fade-up">
+							Technology proposed by Netscape around the same time as the first CSS proposal.
 							<br>
 							It was an alternative to CSS.
 							<br>
-							The technology was never accepted as a formal standard and it never gained much acceptance.
+							The technology was never accepted as a formal standard.
+						</div>
+
+						<div class="fragment fade-up">
+							JSSS EXAMPLE
+							<code></code>
+						</div>
+	
+						<!-- NOTES -->
+						<aside class="notes">
+							Talk about the example
 						</aside>
 				</section>
 
@@ -125,15 +149,20 @@
 						<h5>Table</h5>
 					</div>
 
-					<!-- NOTES -->
-					<aside class="notes">
+					<div class="fragment fade-up">
 						During 1996 the typical way to style a document was to use the display property 'table'.
 						<br>
 
 						TABLE EXAMPLE HERE
+						<code></code>
 
 						<br>
 						Table is still being used today, currently its the de facto way of styling emails.
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						<!--  -->
 					</aside>
 				</section>
 
@@ -142,13 +171,11 @@
 
 					<h2>Past</h2>
 
-
 					<div class="fragment fade-up">
 						<h5>Problems with Table 👎</h5>
 					</div>
 
-					<!-- NOTES -->
-					<aside class="notes">
+					<div class="fragment fade-up">
 						Tables Are For Data
 						<br>
 						Strict (non-linear) Markup
@@ -158,6 +185,11 @@
 						Accessibility Nightmare
 						<br>
 						SEO Problem
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						<!--  -->
 					</aside>
 				</section>
 
@@ -171,13 +203,19 @@
 						<h5>Floats</h5>
 					</div>
 
-					<!-- NOTES -->
-					<aside class="notes">
+					<div class="fragment fade-up">
 						Floats
 						<br>
 						Clearfix Hack
+						CLEARFIX EXAMPLE
 						<br>
 						Overflow hack	
+						OVERFLOW EXAMPLE
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						Example each point
 					</aside>
 				</section>
 
@@ -190,11 +228,15 @@
 						<h5>Benefits and drawbacks with Float</h5>
 					</div>
 
-					<!-- NOTES -->
-					<aside class="notes">
+					<div class="fragment fade-up">
 						👍 Flexible Markup & Nesting!
 						<br>
 						👎 Explicit Widths
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						<!--  -->
 					</aside>
 				</section>
 
@@ -210,9 +252,14 @@
 						gutters slpit left and right
 					</div>
 
+					<div class="fragment">
+						960 GRID EXAMPLE
+						<img src="" alt="">
+					</div>
+
 					<!-- NOTES -->
 					<aside class="notes">
-
+						Example what the 960 grid is and why its such a big deal
 					</aside>
 				</section>
 
@@ -225,17 +272,11 @@
 					</div>
 
 					<div class="fragment">
-							👍
-							Shared Browser Hacks
+						👍 Shared Browser Hacks
+						👍 Consistent Patterns
+						👍 Developers Can Ignore CSS
 
-							👍
-							Consistent Patterns
-
-							👍
-							Developers Can Ignore CSS
-
-							👎
-							Frameworks Lock You In
+						👎 Frameworks Lock You In
 					</div>
 
 					<!-- NOTES -->
@@ -255,13 +296,9 @@
 
 					<div class="fragment">
 							👍 Finally Not a Hack!!
-
 							👍 Element Driven
-
 							👍 Relative & ideal sizing
-
 							👍 control the axis and alignment
-
 							👍 control order
 
 							👎 Nesting Matters Too Much
@@ -328,10 +365,11 @@
 					</aside>
 				</section>
 
-				<!-- WHY PRE PROCESSORS EXIST -->
+				<!-- Why preprocessors exist -->
 				<section>
 						<h2>Vendor Prefixes</h2>
 						<h2>Faster way of writing the grid system or creating your own</h2>
+						<h2>Using features what are not yet available</h2>
 	
 						<div class="fragment">
 							<ul>
@@ -356,28 +394,20 @@
 								</code>
 							</pre>
 						</div>
+
+						<div class="fragment fade-up">
+								Variables | Mixins | Functions
+								<h5>SCSS</h5>
+							</div>
 	
 						<!-- NOTES -->
 						<aside class="notes">
 							When new modules were being discussed they hit different browsers at different times. For example, the webkit-powered browsers (Safari and Chrome) were the first ones to introduce some of the animation-style properties like transform and transition. By using vendor prefixed properties, web designers were able to use those new features in their work and have them seen on the browsers that supported them right away, instead of having to wait for every other browser manufacturer to catch up!
 	
 							One of the reasons why Pre-processors became is popular is due to there innate ability to hide vendor prefixes away so developers didn’t have to write them.
+
+							SCSS is a scripting language that is interpreted into Cascading Style Sheets (CSS), also known as a preprocessor. Sass can be compiled into CSS either by application, like CodeKit or Scout, or from the command line. Sass can be written in one of two syntaxes: SCSS, the newer, more CSS-like syntax, or Sass, the older, indent-dependent syntax. Sass can be used on most operating systems, including Mac, Windows and Linux.
 						</aside>
-				</section>
-	
-				<!-- CSS PRE PROCESSOR IN ACTION - SCSS -->
-				<section>
-					<h2>Pre-processors</h2>
-
-					<div class="fragment fade-up">
-						Variables | Mixins | Functions
-						<h5>SCSS</h5>
-					</div>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						SCSS is a scripting language that is interpreted into Cascading Style Sheets (CSS), also known as a preprocessor. Sass can be compiled into CSS either by application, like CodeKit or Scout, or from the command line. Sass can be written in one of two syntaxes: SCSS, the newer, more CSS-like syntax, or Sass, the older, indent-dependent syntax. Sass can be used on most operating systems, including Mac, Windows and Linux.
-					</aside>
 				</section>
 
 				<!-- Future (1) -->
@@ -389,6 +419,7 @@
 						</div>
 	
 						<div class="fragment">
+							CSS GRID EXAMPLE
 						</div>
 	
 						<!-- NOTES -->
@@ -406,11 +437,12 @@
 					</div>
 
 					<div class="fragment">
+						CSS VARTIABLES EXMAPLE
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-
+						<!--  -->
 					</aside>
 				</section>
 
@@ -423,11 +455,15 @@
 					</div>
 
 					<div class="fragment">
-							<ul>
-								<li class="bullet-point-color"><span class="text-color">CSS Paint API</span></li>
-								<li class="bullet-point-color"><span class="text-color">Typed CSSOM (CSS Object Model or Cascading Style Sheets Object Model)</span></li>
-								<li class="bullet-point-color"><span class="text-color">Worklets</span></li>
-							</ul>
+						<ul>
+							<li class="bullet-point-color"><span class="text-color">CSS Paint API</span></li>
+							<li class="bullet-point-color"><span class="text-color">Typed CSSOM (CSS Object Model or Cascading Style Sheets Object Model)</span></li>
+							<li class="bullet-point-color"><span class="text-color">Worklets</span></li>
+						</ul>
+					</div>
+
+					<div class="fragment fade-up">
+						<h5>Hudini CSS EXMAPLE</h5>
 					</div>
 	
 					<!-- NOTES -->
