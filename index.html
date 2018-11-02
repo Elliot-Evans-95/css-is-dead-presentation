@@ -13,27 +13,20 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="red-border-top"></div>
+			<div class="border-top"></div>
 			<div class="slides">
 
 				<!-- START -->
 				<section>
 					<h1>CSS is dead, long live CSS</h1>
-					<h5>A look at the past, present and the future of CSS</h5>
+					<h2 class="h3">A look at the past, present and the future of CSS</h5>
 
-					<img src="https://dl.dropboxusercontent.com/s/jnkqulq2mq6jdvu/css-is-awesome.jpg" alt="CSS is Awesome">
+					<br><br><br>
+
+					<img src="images/css-is-awesome.jpg" alt="CSS is Awesome">
 
 					<!-- NOTES -->
 					<aside class="notes">
@@ -43,24 +36,28 @@
 
 				<!-- ABOUT ME -->
 				<section>
+					<div class="about-me">
+						<img src="/images/me.jpeg" alt="Image of me">
 
-					Elliot Evans
+						<div class="content">
+							<h1>Elliot Evans</h1>
+					
+							<p>Web Application Developer</p> 
+							<p>Work at Codeweavers</p>
+						</div>
+					</div>
 
-					Web Application Developer
-
-					Work at Codeweavers
-
-					<img src="" alt="">
-				
 					<!-- NOTES -->
 					<aside class="notes">
-						<!---->
+						Before I start the talk just a bit about me.
+						<br>
+						I am a Web Application Developer at Codeweavers working on building great web app experiences for the motor car finance sector.
 					</aside>
 				</section>
 
 				<!-- TO COVER -->
 				<section>
-					<h2>To cover:</h2>
+					<h2 class="margin-bottom-1">To cover:</h2>
 					<ul>
 						<li class="bullet-point-color">
 							<span class="text-color">History</span>
@@ -78,118 +75,186 @@
 
 					<!-- NOTES -->
 					<aside class="notes">
+						In this talk I will be covering the History of CSS and its past present and future implimentation on the web mainly focusing typical layout use. 
 					</aside>
 				</section>
 
 				<!-- History (1) -->
 				<section>
-
-						<h2>History</h2>
-	
-						<div class="fragment fade-up">
-							<h5>Style Documents</h5>
-						</div>
+					<header class="margin-bottom-1">
+						<h1>History</h2>
 
 						<div class="fragment fade-up">
-							In 1994 the web is starting to be used as a platform for electronic publishing. but there is no way to style documents.
-							<br>
-							Håkon published the first draft of the Cascading HTML Style Sheets proposal.
-							<br>
-							In 1995, Internet Explorer and Netscape added CSS support in there browsers.
-							<br>
-							CSS level 1 released in 1996.
+							<h2 class="h3">Style Documents</h5>
 						</div>
+					</header>
 
-						<div class="fragment fade-up">
-							1995 WEBSITE EXAMPLE
-							<img src="" alt="">
+					<div class="history">
+
+						<div class="fragment fade-up text-left">
+							<p>In 1994 the web is starting to be used as a platform for electronic publishing. but there is no way to style documents.</p>
+							<br>
+							<p>Håkon published the first draft of the Cascading HTML Style Sheets proposal.</p>
+							<br>
+							<p>In 1995, Internet Explorer and Netscape added CSS support in there browsers.</p>
+							<br>
+							<p>CSS level 1 released in 1996.</p>
 						</div>
-	
-						<!-- NOTES -->
-						<aside class="notes">
-							<!--  -->
-						</aside>
+		
+						<figure class="fragment fade-up">
+							<figcaption>Google in 1996</figcaption>
+							<img src="images/earlygoogle.jpg" alt="Google in 1996">
+						</figure>
+
+					</div>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						At the time Internet Explorer was still trying to catch up with Netscape to be the most popular browser. 
+						<br>
+						Before the begining of 1996 JavaScript was added to Netscape.
+					</aside>
 				</section>
 
 				<!-- History (2) -->
 				<section>
 
-						<h2>History</h2>
-						<h5>Side Note</h5>
-	
-						<div class="fragment fade-up">
-							<h5>JSSS - JavaScript Style Sheets</h5>
-						</div>
+					<header class="margin-bottom-1">
+						<h1>History</h2>
 
 						<div class="fragment fade-up">
-							Technology proposed by Netscape around the same time as the first CSS proposal.
-							<br>
-							It was an alternative to CSS.
-							<br>
-							The technology was never accepted as a formal standard.
+							<h2 class="h3">Side Note</h5>
 						</div>
+					</header>
 
-						<div class="fragment fade-up">
-							JSSS EXAMPLE
-							<code></code>
-						</div>
-	
-						<!-- NOTES -->
-						<aside class="notes">
-							Talk about the example
-						</aside>
+					<div class="fragment fade-up">
+						<h5>JSSS - JavaScript Style Sheets</h5>
+					</div>
+
+					<div class="fragment fade-up">
+						Technology proposed by Netscape around the same time as the first CSS proposal.
+						<br>
+						It was an alternative to CSS.
+						<br>
+						The technology was never accepted as a formal standard.
+					</div>
+
+					<figure class="fragment fade-up">
+						<code>
+							<style type="text/javascript">
+								tags.H1.color = "red";
+								tags.p.fontSize = "20pt";
+								with (tags.H3) {
+									color = "green";
+								}
+								with (tags.H2) {
+									color = "red";
+									fontSize = "16pt";
+									marginTop = "4cm";
+								}
+								</style>
+						</code>
+					</figure>
+
+					<!-- NOTES -->
+					<aside class="notes">
+						Talk about the example
+					</aside>
+
 				</section>
 
 				<!-- Past (1) -->
 				<section>
 
-					<h2>Past</h2>
+					<header class="margin-bottom-1">
+						<h1>Past</h2>
 
-					<div class="fragment fade-up">
-						<h5>Table</h5>
+						<div class="fragment fade-up">
+							<h2 class="h3">Table</h5>
+						</div>
+					</header>
+
+					<div class="past-table">
+						<div class="fragment fade-up">
+							<p>During 1996 the typical way to style a document was to use the display property 'table'.</p>
+						</div>
+
+						<div class="fragment fade-up">
+							<code>
+								<table>
+									<tbody>
+										<tr>
+											<td>Header</td>
+											<td>Header</td>
+											<td>Header</td>
+											<td>Header</td>
+										</tr>
+										<tr>
+											<td>Main</td>
+											<td>Main</td>
+											<td>Main</td>
+											<td>Aside</td>
+										</tr>
+										<tr>
+											<td>Footer</td>
+											<td>Footer</td>
+											<td>Footer</td>
+											<td>Footer</td>
+										</tr>
+									</tbody>
+								</table>
+							</code>
+						</div>
+
+						<div class="fragment fade-up">
+							<p>Table is still being used today, currently its the de facto way of styling emails.</p>
+						</div>
+
 					</div>
 
-					<div class="fragment fade-up">
-						During 1996 the typical way to style a document was to use the display property 'table'.
-						<br>
-
-						TABLE EXAMPLE HERE
-						<code></code>
-
-						<br>
-						Table is still being used today, currently its the de facto way of styling emails.
-					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						<!--  -->
+						The table grid system was also being used dreamweaver
 					</aside>
 				</section>
 
 				<!-- Past (2) -->
 				<section>
 
-					<h2>Past</h2>
+					<header class="margin-bottom-1">
+						<h1>Past</h2>
 
-					<div class="fragment fade-up">
-						<h5>Problems with Table 👎</h5>
-					</div>
+						<div class="fragment fade-up">
+							<h2 class="h3">Problems with Table 👎</h5>
+						</div>
+					</header>
 
-					<div class="fragment fade-up">
-						Tables Are For Data
+					<ul class="fragment fade-up">
+						<li>
+							<span class="text-color">Tables Are For Data</span>
+						</li>
 						<br>
-						Strict (non-linear) Markup
+						<li>
+							<span class="text-color">Strict (non-linear) Markup</span>
+						</li>
 						<br>
-						Limited Styling	
+						<li>
+							<span class="text-color">Limited Styling</span>
+						</li>
 						<br>
-						Accessibility Nightmare
+						<li>
+							<span class="text-color">Accessibility Nightmare</span>
+						</li>
 						<br>
-						SEO Problem
-					</div>
+						<li>
+							<span class="text-color">SEO Problem</span>
+						</li>
+					</ul>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						<!--  -->
+						Expand on the points
 					</aside>
 				</section>
 
