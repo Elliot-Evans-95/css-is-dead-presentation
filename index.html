@@ -22,7 +22,7 @@
 				<!-- START -->
 				<section>
 					<h1>CSS is dead, long live CSS</h1>
-					<h2 class="h3">A look at the past, present and the future of CSS</h5>
+					<h2 class="h3">A look at the past, present and the future of CSS</h2>
 
 					<br><br><br>
 
@@ -75,30 +75,27 @@
 
 					<!-- NOTES -->
 					<aside class="notes">
-						In this talk I will be covering the History of CSS and its past present and future implimentation on the web mainly focusing typical layout use. 
+						In this talk I will be covering the History of CSS and its past present and future implementation on the web mainly focusing typical layout use.
 					</aside>
 				</section>
 
 				<!-- History (1) -->
 				<section>
 					<header class="margin-bottom-1">
-						<h1>History</h2>
+						<h1>History</h1>
 
 						<div class="fragment fade-up">
-							<h2 class="h3">Style Documents</h5>
+							<h2 class="h3">Style Documents</h2>
 						</div>
 					</header>
 
 					<div class="history">
 
 						<div class="fragment fade-up text-left">
-							<p>In 1994 the web is starting to be used as a platform for electronic publishing. but there is no way to style documents.</p>
-							<br>
-							<p>Håkon published the first draft of the Cascading HTML Style Sheets proposal.</p>
-							<br>
-							<p>In 1995, Internet Explorer and Netscape added CSS support in there browsers.</p>
-							<br>
-							<p>CSS level 1 released in 1996.</p>
+							<p class="margin-top-0">In 1994 the web is starting to be used as a platform for electronic publishing. but there is no way to style documents.</p>
+							<p class="margin-top-0">Håkon published the first draft of the Cascading HTML Style Sheets proposal.</p>
+							<p class="margin-top-0">In 1995, Internet Explorer and Netscape added CSS support in there browsers.</p>
+							<p class="margin-top-0">CSS level 1 released in 1996.</p>
 						</div>
 		
 						<figure class="fragment fade-up">
@@ -116,71 +113,21 @@
 					</aside>
 				</section>
 
-				<!-- History (2) -->
-				<section>
-
-					<header class="margin-bottom-1">
-						<h1>History</h2>
-
-						<div class="fragment fade-up">
-							<h2 class="h3">Side Note</h5>
-						</div>
-					</header>
-
-					<div class="fragment fade-up">
-						<h5>JSSS - JavaScript Style Sheets</h5>
-					</div>
-
-					<div class="fragment fade-up">
-						Technology proposed by Netscape around the same time as the first CSS proposal.
-						<br>
-						It was an alternative to CSS.
-						<br>
-						The technology was never accepted as a formal standard.
-					</div>
-
-					<figure class="fragment fade-up">
-						<code>
-							<style type="text/javascript">
-								tags.H1.color = "red";
-								tags.p.fontSize = "20pt";
-								with (tags.H3) {
-									color = "green";
-								}
-								with (tags.H2) {
-									color = "red";
-									fontSize = "16pt";
-									marginTop = "4cm";
-								}
-								</style>
-						</code>
-					</figure>
-
-					<!-- NOTES -->
-					<aside class="notes">
-						Talk about the example
-					</aside>
-
-				</section>
-
 				<!-- Past (1) -->
 				<section>
 
 					<header class="margin-bottom-1">
-						<h1>Past</h2>
+						<h1>Past</h1>
 
 						<div class="fragment fade-up">
-							<h2 class="h3">Table</h5>
+							<h2 class="h3">Table</h2>
 						</div>
 					</header>
 
 					<div class="past-table">
-						<div class="fragment fade-up">
-							<p>During 1996 the typical way to style a document was to use the display property 'table'.</p>
-						</div>
 
 						<div class="fragment fade-up">
-							<code>
+							<code data-trim data-noescape>
 								<table>
 									<tbody>
 										<tr>
@@ -206,9 +153,15 @@
 							</code>
 						</div>
 
-						<div class="fragment fade-up">
-							<p>Table is still being used today, currently its the de facto way of styling emails.</p>
-						</div>
+                        <div class="margin-1">
+                            <div class="fragment fade-up text-left">
+                                <p>During 1996 the typical way to style a document was to use the display property 'table'.</p>
+                            </div>
+
+                            <div class="fragment fade-up text-left">
+                                <p>Table is still being used today, currently its the de facto way of styling emails.</p>
+                            </div>
+                        </div>
 
 					</div>
 
@@ -223,34 +176,34 @@
 				<section>
 
 					<header class="margin-bottom-1">
-						<h1>Past</h2>
+						<h1>Past</h1>
 
 						<div class="fragment fade-up">
-							<h2 class="h3">Problems with Table 👎</h5>
+							<h2 class="h3">Problems with Table 👎</h2>
 						</div>
 					</header>
 
-					<ul class="fragment fade-up">
-						<li>
-							<span class="text-color">Tables Are For Data</span>
-						</li>
-						<br>
-						<li>
-							<span class="text-color">Strict (non-linear) Markup</span>
-						</li>
-						<br>
-						<li>
-							<span class="text-color">Limited Styling</span>
-						</li>
-						<br>
-						<li>
-							<span class="text-color">Accessibility Nightmare</span>
-						</li>
-						<br>
-						<li>
-							<span class="text-color">SEO Problem</span>
-						</li>
-					</ul>
+                    <div class="fragment fade-up">
+
+                        <ul>
+                            <li>
+                                <span class="text-color">Tables Are For Data</span>
+                            </li>
+                            <li>
+                                <span class="text-color">Strict (non-linear) Markup</span>
+                            </li>
+                            <li>
+                                <span class="text-color">Limited Styling</span>
+                            </li>
+                            <li>
+                                <span class="text-color">Accessibility Nightmare</span>
+                            </li>
+                            <li>
+                                <span class="text-color">SEO Problem</span>
+                            </li>
+                        </ul>
+
+                    </div>
 
 					<!-- NOTES -->
 					<aside class="notes">
@@ -261,263 +214,433 @@
 				<!-- Past (3) -->
 				<section>
 
-					<h2>Past</h2>
+                    <header class="margin-bottom-1">
+                        <h1>Past</h1>
 
+                        <div class="fragment fade-up">
+                            <h2 class="h3">Floats</h2>
+                        </div>
+                    </header>
 
-					<div class="fragment fade-up">
-						<h5>Floats</h5>
-					</div>
+                    <div class="fragment fade-up past-floats">
+                        <h2 class="h5 flex-50">Overflow hack</h2>
 
-					<div class="fragment fade-up">
-						Floats
-						<br>
-						Clearfix Hack
-						CLEARFIX EXAMPLE
-						<br>
-						Overflow hack	
-						OVERFLOW EXAMPLE
-					</div>
+                        <pre class="flex-50" style="box-shadow: none;">
+                            <code data-trim data-noescape>
+                                .clearfix {
+                                    overflow: auto;
+                                }
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="fragment fade-up past-floats">
+                        <h2 class="h5 flex-50">Clearfix Hack</h2>
+
+                        <pre class="flex-50" style="box-shadow: none;">
+                            <code class="flex-50" data-trim data-noescape>
+                                .clearfix::after {
+                                    content: "";
+                                    clear: both;
+                                    display: table;
+                                }
+                            </code>
+                        </pre>
+                    </div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						Example each point
+						The overflow:auto approach works in the same way but its frowned up and it too is a hack to fix the float issues.
+                        <br>
+						A clearfix is a way for an element to automatically clear its child elements, so that you don't need to add additional markup. It's generally used in float layouts where elements are floated to be stacked horizontally.
+                        <br>
+						The clearfix is a way to combat the zero-height container problem for floated elements.
 					</aside>
 				</section>
 
 				<!-- Past (4) -->
 				<section>
 
-					<h2>Past</h2>
+                    <header class="margin-bottom-1">
+                        <h1>Past</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">Benefits and drawbacks with Float</h2>
+                        </div>
+                    </header>
 
 					<div class="fragment fade-up">
-						<h5>Benefits and drawbacks with Float</h5>
-					</div>
-
-					<div class="fragment fade-up">
-						👍 Flexible Markup & Nesting!
-						<br>
-						👎 Explicit Widths
+                        <ul>
+                            <li class="no-list-style">👍 Flexible Markup & Nesting!</li>
+                            <li class="no-list-style">👎 Explicit Widths</li>
+                        </ul>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						<!--  -->
+						By adding this hack into your grid layout you can have as well nested or flat structure in your html code.
+                        <br>
+						The issue is that you are using a css hack to fix problems with float.
 					</aside>
 				</section>
 
 				<!-- Past (5) -->
 				<section>
-					<h2>Past</h2>
 
-					<div class="fragment fade-up">
-						<h5>960 Grid and the float grid system - 2010</h5>
+                    <header class="margin-bottom-1">
+                        <h1>Past</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">960 Grid and the float grid system - 2010</h2>
+                        </div>
+                    </header>
+
+					<div class="fragment">
+						Columns and gutters
 					</div>
 
 					<div class="fragment">
-						gutters slpit left and right
-					</div>
-
-					<div class="fragment">
-						960 GRID EXAMPLE
-						<img src="" alt="">
+						<img src="/images/960-grid.png" alt="960 grid system" style="width: 50%">
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						Example what the 960 grid is and why its such a big deal
+						the 960 Grid was the first popular grid framework. Its concept was to wrap content into a container and for that container to be split into 12, 16, or 24 equally sized columns.
+                        <br>
+                        In addition widths could be changed and gutter sizes were taken into account.
 					</aside>
 				</section>
 
 				<!-- Past (6) -->
 				<section>
-					<h2>Past</h2>
 
-					<div class="fragment fade-up">
-						<h5>Benfitis and drawbacks of the float grid system</h5>
-					</div>
+                    <header class="margin-bottom-1">
+                        <h1>Past</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">Benefits and drawbacks of the float grid system</h2>
+                        </div>
+                    </header>
 
 					<div class="fragment">
-						👍 Shared Browser Hacks
-						👍 Consistent Patterns
-						👍 Developers Can Ignore CSS
-
-						👎 Frameworks Lock You In
+                        <ul>
+                            <li class="no-list-style">👍 Shared Browser Hacks</li>
+                            <li class="no-list-style">👍 Consistent Patterns</li>
+                            <li class="no-list-style">👍 Developers Can Ignore CSS</li>
+                            <li class="no-list-style">👎 Frameworks Lock You In</li>
+                        </ul>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-
+                        The framework takes into account browser quirks so you don't have too.
+                        You can focus on making the layout to your site without the pain of CSS.
+                        <br>
+                        Once you adopt 960 grid and other similar frameworks such as bootstrap, they lock you into using them.
 					</aside>
+
 				</section>
 
 				<!-- Present (1) -->
 				<section>
-					<h2>Present</h2>
 
-					<div class="fragment fade-up">
-						<h5>CSS Level 3</h5>
-						<h5>Flexbox - 2013</h5>
-					</div>
+                    <header class="margin-bottom-1">
+                        <h1>Present</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">CSS Level 3</h2>
+                            <h2 class="h3">Flexbox - 2013</h2>
+                        </div>
+                    </header>
 
 					<div class="fragment">
-							👍 Finally Not a Hack!!
-							👍 Element Driven
-							👍 Relative & ideal sizing
-							👍 control the axis and alignment
-							👍 control order
-
-							👎 Nesting Matters Too Much
+                        <pre style="box-shadow: none;">
+                            <code data-trim data-noescape>
+                                .flex-container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-evenly;
+                                }
+                            </code>
+                        </pre>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-
+                        The Flexible Box Module, usually referred to as flexbox or flex, is a one-dimensional layout model.
+                        <br>
+                        Flex can offer alignment and space capabilities between items.
 					</aside>
 				</section>
+
+                <!-- Present (1) -->
+                <section>
+
+                    <header class="margin-bottom-1">
+                        <h1>Present</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">Benefits and drawbacks of Flexbox</h2>
+                        </div>
+                    </header>
+
+                    <div class="fragment">
+                        <ul>
+                            <li class="no-list-style">👍 Finally Not a Hack!!</li>
+                            <li class="no-list-style">👍 Element Driven</li>
+                            <li class="no-list-style">👍 Relative & ideal sizing</li>
+                            <li class="no-list-style">👍 control the axis and alignment</li>
+                            <li class="no-list-style">👍 control order</li>
+                            <li class="no-list-style">👎 Nesting Matters Too Much</li>
+                        </ul>
+                    </div>
+
+                    <!-- NOTES -->
+                    <aside class="notes">
+                        Flex can give you more control then the alternatives.
+                        Its quick to get going to makes difficult layouts achievable.
+                        <br>
+                        Because flex is one dimensional, the nesting of elements matters to how they are positioned.
+                    </aside>
+                </section>
 
 				<!-- Present (2) -->
 				<section>
-					<h2>Present</h2>
 
-					<div class="fragment fade-up">
-						<h5>CSS-in-JS</h5>
-					</div>
+                    <header class="margin-bottom-1">
+                        <h1>Present</h1>
 
-					<div class="fragment fade-up">
-							<h5>History</h5>
-						</div>
-	
-						<div class="fragment fade-up">
-							<h5>What its solving</h5>
-						</div>
-	
-						<div class="fragment fade-up">
-							<h5>Limitations</h5>
-						</div>
-	
-						<div class="fragment fade-up">
-							<h5>Benefits</h5>
-						</div>
-	
-						<div class="fragment">
-								<h5>Example: Styled Components</h5>
-		
-								<iframe src="https://codesandbox.io/embed/pwv2yrom00" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-							</div>
-	
-						<!-- NOTES -->
-						<aside class="notes">
-							- History:
-							Inline styles and JSS is different
-							JSS will output unique classes
-							<br>
-							- What its solving:
-							CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
-							<br>
-							- Limitations:
-							Not all CSS features can be aliased with JavaScript event handlers , many pseudo selectors (like :disabled, :before, :nth-child) aren’t possible, in addition using media queries is not possible as well (media queries)
-							<br>
-							- Benefits:
-							Generates the minimum required CSS.
-							Offers good runtime performance.
-							Supports static and dynamic styles.
-							Helps to pre-render critical CSS.
-						</aside>
+                        <div class="fragment fade-up">
+                            <h2 class="h3">CSS-in-JS</h2>
+                        </div>
+                    </header>
 
-					<!-- NOTES -->
-					<aside class="notes">
+					<div class="fragment fade-up margin-bottom-1n">
+                        <h3 class="h4">Example: Styled Components</h3>
+                    </div>
 
-					</aside>
+                    <div class="fragment">
+                        <iframe src="https://codesandbox.io/embed/pwv2yrom00" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                    </div>
+	
+                    <!-- NOTES -->
+                    <aside class="notes">
+                        - History:
+                        Inline styles and JSS is different
+                        JSS will output unique classes
+                        <br>
+                        - What its solving:
+                        CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
+                        <br>
+                    </aside>
+
 				</section>
+
+                <!-- Present (1) -->
+                <section>
+
+                    <header class="margin-bottom-1">
+                        <h1>Present</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">Benefits and drawbacks of CSS-in-JS</h2>
+                        </div>
+                    </header>
+
+                    <div class="fragment">
+                        <ul>
+                            <li class="no-list-style">👍 Component Based Styling</li>
+                            <li class="no-list-style">👍 Static and dynamic Styling</li>
+                            <li class="no-list-style">👍 Pre-render CSS</li>
+                            <li class="no-list-style">👍 Only generates the minimum amount CSS</li>
+                            <li class="no-list-style">👎 Missing some CSS features</li>
+                        </ul>
+                    </div>
+
+                    <!-- NOTES -->
+                    <aside class="notes">
+                        Writing CSS in JS give you the benefits of the JS toolchain, benefits include removing unused CSS and in-lining critical CSS for a faster first page load performance.
+                        <br>
+                        Not all CSS features can be aliased with JavaScript event handlers.
+                        Many pseudo selectors (like :disabled, :before, :nth-child) are not possible, in addition using media queries is not possible as well (media queries)
+                    </aside>
+                </section>
 
 				<!-- Why preprocessors exist -->
 				<section>
-						<h2>Vendor Prefixes</h2>
-						<h2>Faster way of writing the grid system or creating your own</h2>
-						<h2>Using features what are not yet available</h2>
-	
-						<div class="fragment">
-							<ul>
-								<li class="bullet-point-color"><span class="text-color">Android: -webkit-</span></li>
-								<li class="bullet-point-color"><span class="text-color">Chrome: -webkit-</span></li>
-								<li class="bullet-point-color"><span class="text-color">Firefox: -moz-</span></li>
-								<li class="bullet-point-color"><span class="text-color">Internet Explorer: -ms-</span></li>
-								<li class="bullet-point-color"><span class="text-color">iOS: -webkit-</span></li>
-								<li class="bullet-point-color"><span class="text-color">Opera: -o-</span></li>
-								<li class="bullet-point-color"><span class="text-color">Safari: -webkit-</span></li>
-							</ul>
-						</div>
-	
-						<div class="fragment fade-up">
-							<pre style="box-shadow: none;">
-								<code data-trim data-noescape>
-									-webkit-transition: all 4s ease;
-									-moz-transition: all 4s ease;
-									-ms-transition: all 4s ease;
-									-o-transition: all 4s ease;
-									transition: all 4s ease;
-								</code>
-							</pre>
-						</div>
 
-						<div class="fragment fade-up">
-								Variables | Mixins | Functions
-								<h5>SCSS</h5>
-							</div>
-	
-						<!-- NOTES -->
-						<aside class="notes">
-							When new modules were being discussed they hit different browsers at different times. For example, the webkit-powered browsers (Safari and Chrome) were the first ones to introduce some of the animation-style properties like transform and transition. By using vendor prefixed properties, web designers were able to use those new features in their work and have them seen on the browsers that supported them right away, instead of having to wait for every other browser manufacturer to catch up!
-	
-							One of the reasons why Pre-processors became is popular is due to there innate ability to hide vendor prefixes away so developers didn’t have to write them.
+                    <header class="margin-bottom-1">
+                        <h1>Pre-processors</h1>
 
-							SCSS is a scripting language that is interpreted into Cascading Style Sheets (CSS), also known as a preprocessor. Sass can be compiled into CSS either by application, like CodeKit or Scout, or from the command line. Sass can be written in one of two syntaxes: SCSS, the newer, more CSS-like syntax, or Sass, the older, indent-dependent syntax. Sass can be used on most operating systems, including Mac, Windows and Linux.
-						</aside>
+                        <div class="fragment fade-up">
+                            <ul>
+                                <li>
+                                    <span class="text-color">Allows the use of features that are not yet available</span>
+                                </li>
+                                <li>
+                                    <span class="text-color">Adds programmatic features to aid developers</span>
+                                </li>
+                                <li>
+                                    <span class="text-color">Bridges gap between latest and future CSS and practices</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <div class="pre-processor fragment fade-up">
+                        <pre class="margin-1" style="box-shadow: none; font-size: 1rem;">
+                            <code data-trim data-noescape>
+                                $font-stack: Helvetica, sans-serif;
+                                $primary-color: #333;
+
+                                body {
+                                  font: 100% $font-stack;
+                                  color: $primary-color;
+                                }
+                            </code>
+                        </pre>
+
+                        <pre class="margin-1" style="box-shadow: none; font-size: 1rem;">
+                            <code data-trim data-noescape>
+                                @mixin flex {
+                                    display: -webkit-flex;
+                                    display: flex;
+                                }
+
+                                .row {
+                                    @include flex;
+                                }
+                            </code>
+                        </pre>
+
+                        <pre class="margin-1" style="box-shadow: none; font-size: 1rem;">
+                            <code data-trim data-noescape>
+                                $font: (
+                                    heading: 32px,
+                                    subHeading: 24px,
+                                    default: 16px
+                                )
+
+                                .heading-content {
+                                  content: map-get($merged, heading);
+                                }
+                            </code>
+                        </pre>
+                    </div>
+
+                    <!-- NOTES -->
+                    <aside class="notes">
+                        One of the reasons why Pre-processors became is popular is due to there innate ability to hide vendor prefixes away so developers don’t have to write them.
+                        <br>
+                        SCSS is a scripting language that is interpreted into Cascading Style Sheets (CSS), also known as a preprocessor.
+                    </aside>
 				</section>
 
 				<!-- Future (1) -->
 				<section>
-						<h2>Future</h2>
-	
-						<div class="fragment fade-up">
-							<h5>CSS Grid</h5>
-						</div>
-	
-						<div class="fragment">
-							CSS GRID EXAMPLE
-						</div>
-	
-						<!-- NOTES -->
-						<aside class="notes">
-	
-						</aside>
+
+                    <header class="margin-bottom-1">
+                        <h1>Future</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">CSS Grid</h2>
+                        </div>
+
+                    </header>
+
+                    <div class="future-grid">
+                        <pre class="flex-50 margin-1" style="box-shadow: none; font-size: 1rem;">
+                            <code data-trim data-noescape style="max-height: 100%">
+                                .wrapper {
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    grid-gap: 10px;
+                                    grid-auto-rows: minmax(100px, auto);
+                                }
+                                .one {
+                                    grid-column: 1 / 3;
+                                    grid-row: 1;
+                                }
+                                .two {
+                                    grid-column: 2 / 4;
+                                    grid-row: 1 / 3;
+                                }
+                                .three {
+                                    grid-column: 1;
+                                    grid-row: 2 / 5;
+                                }
+                                .four {
+                                    grid-column: 3;
+                                    grid-row: 3;
+                                }
+                                .five {
+                                    grid-column: 2;
+                                    grid-row: 4;
+                                }
+                                .six {
+                                    grid-column: 3;
+                                    grid-row: 4;
+                                }
+                            </code>
+                        </pre>
+
+                        <img class="flex-50 margin-1" src="/images/css-grid-layout.png" alt="css grid layout" style="width: 50%">
+                    </div>
+
+                    <!-- NOTES -->
+                    <aside class="notes">
+                        CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives.
+                        <br>
+                        Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.
+                    </aside>
 				</section>
 
 				<!-- Future (2) -->
 				<section>
-					<h2>Future</h2>
 
-					<div class="fragment fade-up">
-						<h5>CSS Variables</h5>
-					</div>
+                    <header class="margin-bottom-1">
+                        <h1>Future</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">CSS Variables</h2>
+                        </div>
+                    </header>
 
 					<div class="fragment">
-						CSS VARTIABLES EXMAPLE
+                        <pre style="box-shadow: none;">
+                            <code data-trim data-noescape>
+                                :root {
+                                    --main-bg-color: brown;
+                                }
+
+                                .one {
+                                    color: white;
+                                    background-color: var(--main-bg-color);
+                                    margin: 10px;
+                                    width: 50px;
+                                    height: 50px;
+                                    display: inline-block;
+                                }
+                            </code>
+                        </pre>
 					</div>
 
 					<!-- NOTES -->
 					<aside class="notes">
-						<!--  -->
+                        CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document.
 					</aside>
 				</section>
 
 				<!-- Future (3) -->
 				<section>
-					<h2>Future</h2>
 
-					<div class="fragment fade-up">
-						<h5>Hudini CSS</h5>
-					</div>
+                    <header class="margin-bottom-1">
+                        <h1>Future</h1>
+
+                        <div class="fragment fade-up">
+                            <h2 class="h3">Hudini CSS</h2>
+                        </div>
+                    </header>
 
 					<div class="fragment">
 						<ul>
@@ -527,10 +650,27 @@
 						</ul>
 					</div>
 
-					<div class="fragment fade-up">
-						<h5>Hudini CSS EXMAPLE</h5>
-					</div>
-	
+                    <div class="future-hudini fragment fade-up">
+
+                        <pre class="flex-50 margin-1" style="box-shadow: none; font-size: 1.5rem">
+                            <code data-trim data-noescape>
+                                .el span {
+                                    box-decoration-break: clone;
+                                    background: hsl(276, 100%, 50%);
+                                }
+
+                                @supports (background: paint(slanted-bg)) {
+                                    .el.is-loaded span {
+                                        padding-right: 30px;
+                                        background: paint(slanted-bg);
+                                    }
+                                }
+                            </code>
+                        </pre>
+
+                        <img class="flex-50 margin-1" src="/images/slanted-paint.png" alt="CSS houdini slanted paint" style="width: 50%">
+                    </div>
+
 					<!-- NOTES -->
 					<aside class="notes">
 						Houdini’s goal is to expose new APIs to allow web developers to hook up their own code into the CSS engine and the surrounding systems.
@@ -543,43 +683,39 @@
 
 				<!-- Future (4) -->
 				<section>
-					<h2>Future</h2>
 
-					<div class="fragment fade-up">
-						<h5>Shadow DOM</h5>
-					</div>
+                    <header class="margin-bottom-1">
+                        <h1>Future</h1>
 
-					<div class="fragment fade-up">
-							<h5>Web Components</h5>
-						</div>
-	
-						<div class="fragment fade-up">
-							<h5>Encapsulation</h5>
-						</div>
-	
-						<div class="fragment fade-up">
-							<h5>Terminology</h5>
-						</div>
-	
-						<div class="fragment fade-up">
-							<!--<h5>Example</h5>-->
-	
-							<pre style="box-shadow: none;">
-								<code data-trim data-noescape>
-									style.textContent = `
-										:host {
-											display: inline-block;
-										}
-	
-										.lh-button {
-											background: gray;
-											color: red;
-										}
-									`;
-								</code>
-							</pre>
-						</div>
-	
+                        <div class="fragment fade-up">
+                            <h2 class="h3">Shadow DOM</h2>
+                        </div>
+                    </header>
+
+                    <div class="fragment">
+                        <ul>
+                            <li class="bullet-point-color"><span class="text-color">Web Components</span></li>
+                            <li class="bullet-point-color"><span class="text-color">Encapsulation</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="fragment fade-up">
+                        <pre style="box-shadow: none;">
+                            <code data-trim data-noescape>
+                                style.textContent = `
+                                    :host {
+                                        display: inline-block;
+                                    }
+
+                                    .lh-button {
+                                        background: gray;
+                                        color: red;
+                                    }
+                                `;
+                            </code>
+                        </pre>
+                    </div>
+
 					<!-- NOTES -->
 					<aside class="notes">
 						- What uses Shadow DOM:
@@ -603,16 +739,21 @@
 
 				<!-- Conclusion -->
 				<section>
-					<h3>Are we still writing CSS?</h3>
 
-					<ul>
-						<li class="bullet-point-color"><span class="text-color">Nesting Structure (SCSS)</span></li>
-						<li class="bullet-point-color"><span class="text-color">Browser support (SCSS)</span></li>
-						<li class="bullet-point-color"><span class="text-color">No local styles (CSS Modules)</span></li>
-						<li class="bullet-point-color"><span class="text-color">Implicit dependencies (ALL)</span></li>
-						<li class="bullet-point-color"><span class="text-color">No dead code elimination (CSS-IN-JS)</span></li>
-						<li class="bullet-point-color"><span class="text-color">No encapsulation (Shadow-DOM)</span></li>
-					</ul>
+                    <header class="margin-bottom-1">
+                        <h1>Are we still writing CSS?</h1>
+                    </header>
+
+                    <div class="fragment">
+                        <ul>
+                            <li class="bullet-point-color"><span class="text-color">Nesting Structure (SCSS)</span></li>
+                            <li class="bullet-point-color"><span class="text-color">Browser support (SCSS)</span></li>
+                            <li class="bullet-point-color"><span class="text-color">No local styles (CSS Modules)</span></li>
+                            <li class="bullet-point-color"><span class="text-color">Implicit dependencies (ALL)</span></li>
+                            <li class="bullet-point-color"><span class="text-color">No dead code elimination (CSS-IN-JS)</span></li>
+                            <li class="bullet-point-color"><span class="text-color">No encapsulation (Shadow-DOM)</span></li>
+                        </ul>
+                    </div>
 
 					<!-- NOTES -->
 					<aside class="notes">
@@ -623,10 +764,8 @@
 
 				<!-- END SLIDE -->
 				<section>
-					<div class="fragment fade-up">
-						<small>
-							<a href="https://github.com/Elliot-Evans-95/css-is-dead-presentation">https://github.com/Elliot-Evans-95/css-is-dead-presentation</a>
-						</small>
+					<div class="fragment">
+                        <a href="https://github.com/Elliot-Evans-95/css-is-dead-presentation">https://github.com/Elliot-Evans-95/css-is-dead-presentation</a>
 					</div>
 				</section>
 
