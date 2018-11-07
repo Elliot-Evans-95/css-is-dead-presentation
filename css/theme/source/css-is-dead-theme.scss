@@ -385,6 +385,9 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+
+  width: 80%;
+  margin: auto;
 }
 
 .future-hudini {
@@ -437,4 +440,10 @@ body {
   .flex-50 {
     flex: 1 0 50%;
   }
+}
+
+
+// HACK
+.reveal .slides section .fragment.fade-out.visible {
+  display: none;
 }
